@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+.about {
+
+    &__png{
+        width: 300px;
+        align-self: center;
+    }
+  &__container {
+    gap: 2.5rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      
+    }
+  }
+
+  &__column-1{
+      color: var(--color-400);
+  }
+
+  &__column-2 {
+    @include breakpoint(tablet) {
+      grid-row: 1;
+    }
+
+    & img {
+      aspect-ratio: 4/3;
+      object-fit: cover;
+
+      @include breakpoint(tablet) {
+         aspect-ratio: 3/4;
+        }
+
+        @include breakpoint(laptop){
+            aspect-ratio: 4/3;
+        }
+    }
+  }
+
+  &__btn{
+      margin-top: 1.5rem;
+  }
+}

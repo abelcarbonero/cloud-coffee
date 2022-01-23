@@ -1,0 +1,64 @@
+@use '../abstracts/' as *;
+.menu-btn {
+  position: relative;
+  width: 1.8rem;
+  height: 1.125rem;
+  background: transparent;
+  z-index: 20;
+  transition: transform 0.4s;
+  
+
+  @include breakpoint(tablet){
+    width: 2.5rem;
+    height: 1.5rem;
+  }
+
+  & span {
+    position: absolute;
+    display: block;
+    right: .1rem;
+    width: 1.8rem;
+    height: 3px;
+    background: #000;
+    transition: top 0.4s 0.4s, opacity 0.3s 0s, transform 0.4s 0s,
+      background-color 0.4s;
+    pointer-events: none;
+
+    @include breakpoint(tablet){
+      width: 2.5rem;
+    }
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 1px);
+    }
+
+    &:nth-child(3) {
+      top: calc(100% - 2px);
+    }
+  }
+
+  //Menu btn active
+  &.active span {
+    transition: top 0.4s 0s, opacity 0.3s 0s, transform 0.4s 0.4s,
+      background-color 0.4s;
+    background-color: #fff;
+
+    &:nth-child(1) {
+      top: calc(50% - 1px);
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      top: calc(50% - 1px);
+      transform: rotate(-45deg);
+    }
+  }
+}

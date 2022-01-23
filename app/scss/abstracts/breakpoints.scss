@@ -1,0 +1,21 @@
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+$breakpoints: (
+  //480px
+  "phone": "30rem",
+  //768px
+  "tablet": "48rem",
+  //1100px
+  "laptop": "68.75rem",
+  //1400px
+  "desktop": "87.5rem"
+);
+
+// Example:
+// @include breakpoint(tablet){
+//     font-size: 3rem;
+// }

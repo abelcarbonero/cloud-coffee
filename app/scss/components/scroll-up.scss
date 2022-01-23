@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.scroll-top {
+  position: fixed;
+  background-color: var(--color-accent);
+  right: 1rem;
+  bottom: -20%;
+  padding: 0.4rem;
+  display: flex;
+  
+  z-index: 10;
+  transition: bottom 0.6s ease;
+  border-radius: 3px;
+
+  &.show-scroll {
+    bottom: 2rem;
+  }
+}

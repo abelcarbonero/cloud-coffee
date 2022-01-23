@@ -1,0 +1,2 @@
+"use strict";var mainNav=document.querySelector(".main-nav"),hamburgerBtn=document.querySelector(".menu-btn"),showMenu=function(){mainNav.classList.toggle("active"),hamburgerBtn.classList.toggle("active")};document.addEventListener("click",(function(e){console.log(e.target),e.target.matches(".menu-btn")&&showMenu()}));
+//# sourceMappingURL=script.js.map

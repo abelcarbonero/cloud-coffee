@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+
+.form {
+  padding-top: 2rem;
+  max-width: 40rem;
+
+ 
+  &__group {
+    display: flex;
+    flex-direction: column;
+    padding-block: 0.5rem;
+  }
+
+  &__label {
+    font-size: var(--fs-200);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    padding-block: 0.5rem;
+  }
+
+  &__input {
+    padding-block: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 4px;
+  }
+
+  &__textarea{
+      padding: 1rem;
+      border-radius: 4px;
+      margin-top: .5rem;
+  }
+
+  &__btn{
+      margin-top: 1rem;
+      width: 100%;
+  }
+}

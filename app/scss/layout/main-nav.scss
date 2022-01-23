@@ -1,0 +1,51 @@
+@use '../abstracts/' as *;
+.main-nav{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    grid-template-rows: 1fr 6rem;
+    justify-content: center;
+    background-color: var(--color-600);
+    color: var(--color-100);
+    z-index: 10;
+    transform: translateY(-50%);
+    transition: opacity .5s, visibility .5s, transform .5s;
+    opacity: 0;
+    visibility: hidden;
+
+    @include breakpoint(tablet){
+        grid-template-rows: 1fr 9rem;
+    }
+
+    &__list{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-self: center;
+        gap: 1.2rem;
+
+        @include breakpoint(tablet){
+            gap: 1.8rem;
+        }
+    }
+
+    &__link{
+        font-size: var(--fs-700);
+        font-weight: var(--fw-700);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+        @include breakpoint(tablet){
+            font-size: var(--fs-800);
+        }
+    }
+
+
+    &.active{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}

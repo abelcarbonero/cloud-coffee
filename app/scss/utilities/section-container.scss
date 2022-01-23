@@ -1,0 +1,10 @@
+
+@use '../abstracts/' as *;
+.section-container {
+  
+    @include breakpoint(tablet) {
+    padding: 3rem 1.5rem;
+    margin-inline: auto;
+    max-width: 80rem;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+.row-reverse {
+    @include breakpoint(tablet) {
+      flex-direction: row-reverse;
+    }
+}
+
+.reverse{
+  @include breakpoint(tablet) {
+    order: 1;
+  }
+  
+}

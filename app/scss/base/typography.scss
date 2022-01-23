@@ -1,0 +1,65 @@
+@use "../abstracts/" as *;
+:root {
+  /* font-sizes */
+  --fs-biggest: 7rem;
+  --fs-big: 4.375rem; //70px
+  --fs-900: 2.25rem;
+  --fs-800: 2rem; //32px
+  --fs-700: 1.75rem; //28px
+  --fs-600: 1.5rem; // 24px
+  --fs-500: 1.25rem; //20px
+  --fs-400: 1.125rem; //18px
+  --fs-300: 1rem; // 16px
+  --fs-200: 0.875rem; // 14px
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+.section-title {
+  font-size: var(--fs-700);
+  color: var(--color-600);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  &--white{
+    color: var(--color-100);
+  }
+
+  @include breakpoint(tablet) {
+    font-size: var(--fs-800);
+  }
+}
+
+.section-heading {
+  font-size: var(--fs-700);
+  margin-bottom: 1.5rem;
+  color: var(--color-500);
+
+  &--white{
+    color: var(--color-100);
+  }
+
+  @include breakpoint(tablet) {
+    font-size: var(--fs-800);
+    margin-bottom: 2rem;
+  }
+
+  &-2 {
+    font-size: var(--fs-600);
+  }
+}
+
+.section-description {
+  font-size: var(--fs-300);
+  color: var(--color-300);
+  line-height: 1.7;
+
+  @include breakpoint(tablet) {
+    font-size: var(--fs-300);
+  }
+}
+
+
