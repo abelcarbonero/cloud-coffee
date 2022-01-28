@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 .btn{
     display: inline-block;
     text-transform: uppercase;
@@ -7,6 +9,11 @@
     font-size: var(--fs-300);
     font-weight: var(--fw-700);
     transition: all .3s;
+
+    @include breakpoint(tablet){
+        padding: 1rem 2.25rem;
+        font-size: var(--fs-500);
+    }
 
    
 
@@ -18,10 +25,11 @@
     &--white{
         border: 1px solid var(--color-100);
         color: var(--color-100);
+        background-color: var(--color-600);
 
         &:hover{
-            color: var(--color-400);
-            background-color: var(--color-100);
+           
+            background-color: var(--color-500);
         }
     }
 }

@@ -1,7 +1,7 @@
 configurar social links con las urls y hacer que el menu se cierre
 instagram widget (lightwidget)
 tipo letra texto
-imagen hero
+tamaño fuentes e iconos 
 arreglar hamburger en tamaño tablet
 evitar scroll
 cerrar menu cuando se pulsa un enlace o fuera de un enlace

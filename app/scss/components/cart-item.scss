@@ -1,0 +1,49 @@
+.cart-item{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-200);
+
+    & svg{
+        pointer-events: none;
+    }
+
+    & p{
+        justify-self: center;
+    }
+
+    &__info{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    &__remove{
+        display: flex;
+        align-items: center;
+       
+    }
+
+    &__img{
+        width: 40px;
+        aspect-ratio: 1 / 1;
+    }
+
+    &__title{
+        margin-left: .5rem;
+        font-size: var(--fs-200);
+    }
+
+    &__price{
+        justify-self: center;
+        margin-right: .2rem;
+    }
+
+    &__units{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        gap: .5rem;
+    }
+}

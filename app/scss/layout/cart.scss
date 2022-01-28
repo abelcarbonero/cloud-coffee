@@ -1,0 +1,20 @@
+.cart{
+    display: grid;
+    gap: 4rem;
+
+    &-items{
+        display: grid;
+        gap: 3rem;
+    }
+
+    &-footer{
+        display: grid;
+        gap: 2rem;
+
+        &__subtotal{
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+    }
+}

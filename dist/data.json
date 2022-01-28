@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Café de especialidad 'Brasil Cerrado",
+    "country" : "Brasil",
+    "price": 5.95,
+    "instock": 30,
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+    "imgSrc": "./dist/images/coffee-bag-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Café de especialidad 'Bistrea Origins'",
+    "country" : "Colombia",
+    "price": 7.95,
+    "instock": 43,
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur elit. Asperiores, error.",
+    "imgSrc": "./dist/images/coffee-bag-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Café en grano 'Blue Montain'",
+    "country" : "Jamaica",
+    "price": 75.95,
+    "instock": 10,
+    "description":
+      "Lorem , consectetur adipisicing. Asperiores, error.",
+    "imgSrc": "./dist/images/coffee-bag-3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Café tueste natural 100% Arábica",
+    "country" : "Kenya",
+    "price": 12.95,
+    "instock": 15,
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores.",
+    "imgSrc": "./dist/images/coffee-bag-4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Café tueste expresso 100% Arábica ",
+    "country" : "México",
+    "price": 15.95,
+    "instock": 4,
+    "description":
+      "Lorem ipsum adipisicing elit. Asperiores, error.",
+    "imgSrc": "./dist/images/coffee-bag-5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Café Blend",
+    "country" : "Guatemala, Brasil y Perú",
+    "price": 18.95,
+    "instock": 20,
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "imgSrc": "./dist/images/coffee-bag-6.jpg"
+  }
+]

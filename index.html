@@ -14,7 +14,8 @@
     <!-- css link -->
     <link rel="stylesheet" href="/dist/style.css" />
     <!-- js link -->
-    <script defer type="module" src="/dist/script.js"></script>
+    
+   
     <title>Cloud Coffee | Coffee Shop & Bakery</title>
   </head>
   <body>
@@ -41,10 +42,10 @@
               <a href="#contact" class="main-nav__link">Contacto</a>
             </li>
             <li class="main-nav__item">
-              <a href="#shop" class="main-nav__link">Tienda</a>
+              <a href="./shop.html" class="main-nav__link">Tienda</a>
             </li>
             <li class="main-nav__item">
-              <a href="#menu" class="main-nav__link">La Carta</a>
+              <a href="./finalshop.html" class="main-nav__link">La Carta</a>
             </li>
           </ul>
           <!-- mobile social links -->
@@ -55,8 +56,8 @@
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-brand-instagram"
-                    width="48"
-                    height="48"
+                    width="36"
+                    height="36"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="#ffffff"
@@ -76,8 +77,8 @@
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-brand-facebook"
-                    width="48"
-                    height="48"
+                    width="36"
+                    height="36"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="#ffffff"
@@ -97,8 +98,8 @@
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-brand-twitter"
-                    width="48"
-                    height="48"
+                    width="36"
+                    height="36"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="#ffffff"
@@ -116,6 +117,16 @@
             </ul>
           </div>
         </nav>
+        <!-- cart icon  -->
+        <div class="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <polyline points="7 10 12 4 17 10" />
+              <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+              <circle cx="12" cy="15" r="2" />
+            </svg>
+            <span class="cart-icon__quantity"></span>
+      </div>
         <!-- hamburger button  -->
         <button class="menu-btn flex">
           <span></span>
@@ -290,12 +301,15 @@
     </main>
     <!-- FOOTER  -->
     <footer class="footer" id="contact">
-      <div class="footer__container">
-        <h2 class="footer__title section-title section-title--white">
-          Te vienes?
-        </h2>
-        <h3>Coffe.Eat.Love.</h3>
-        <div class="footer__wrapper">
+      
+      <div class="footer__container narrow-container">
+        <div class="footer__title">
+          <h2 class="section-title section-title--white">
+            Te vienes?
+          </h2>
+          <h3>Coffe.Eat.Love.</h3>
+        </div>
+       <div class="footer__wrapper">
           <div class="footer__adress">
             <h3 class="section-heading--2 section-heading--white">Dónde Estamos</h3>
             <p>
@@ -308,45 +322,48 @@
             <p>Mártes a Sábado / 9:00am - 5:00pm</p>
           </div>
         </div>
-        <div class="contact">
-          <h3 class="section-title section-title--white">Contáctanos</h3>
-          <p>Teléfono y Whatsapp: +34 952 00 00 00</p>
-          <p>
-            Mándanos un mensaje vía email, mediante el formulario de abajo o
-            síguenos en redes sociales. Estaremos encantados de saber de ti.
-          </p>
-          <p>
-            Email :
-            <a href="mailto:cloudcoffee@gmail.com">cloudcoffee@gmail.com</a>
-          </p>
+        <div class="footer__contact">
+          <div class="footer__contact__wrapper">
+            <h3 class="section-title section-title--white">Contacto</h3>
+            <p>Teléfono: +34 952 00 00 00</p>
+            <p>
+              Mándanos un mensaje vía email, mediante nuestro formulario o síguenos en redes sociales. Estaremos encantados de saber de ti.
+            </p>
+            <p>
+              Email :
+              <a href="mailto:cloudcoffee@gmail.com">cloudcoffee@gmail.com</a>
+            </p>
+          </div>
           <!-- Form -->
-          <form class="form">
-            <div class="form__container">
-              <div class="form__group">
-                <label class="form__label" for="name">Nombre</label>
-                <input class="form__input" type="text" name="name" id="name" />
+          <div class="form__container">
+            <form class="form">
+              <div class="form__container">
+                <div class="form__group">
+                  <label class="form__label" for="name">Nombre *</label>
+                  <input class="form__input" type="text" name="name" id="name" required />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="email">Email *</label>
+                  <input class="form__input" type="email" name="email" id="name" required />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="phone">Teléfono</label>
+                  <input class="form__input" type="phone" name="phone" id="name" />
+                </div>
+                <div class="form__group">
+                  <textarea
+                    class="form__textarea"
+                    name="message"
+                    id="message"
+                    placeholder="Deja tu mensaje..."
+                    required
+                 
+                  ></textarea>
+                </div>
               </div>
-              <div class="form__group">
-                <label class="form__label" for="email">Email</label>
-                <input class="form__input" type="email" name="email" id="name" />
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="phone">Teléfono</label>
-                <input class="form__input" type="phone" name="phone" id="name" />
-              </div>
-              <div class="form__group">
-                <textarea
-                  class="form__textarea"
-                  name="message"
-                  id="message"
-                  placeholder="Deja tu mensaje..."
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-            </div>
-            <button class="btn btn--white form__btn">Enviar</button>
-          </form>
+              <button class="btn btn--white form__btn">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer__socials socials">
@@ -356,8 +373,8 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-instagram"
-                width="36"
-                height="36"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 stroke-width="1.0"
                 stroke="#ffffff"
@@ -377,8 +394,8 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-facebook"
-                width="36"
-                height="36"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 stroke-width="1.0"
                 stroke="#ffffff"
@@ -398,8 +415,8 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-twitter"
-                width="36"
-                height="36"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 stroke-width="1.0"
                 stroke="#ffffff"
@@ -420,5 +437,6 @@
      
     </div>
     </footer>
+    <script src="./dist/script.js"></script>
   </body>
 </html>

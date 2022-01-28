@@ -2,10 +2,20 @@
 .container{
     padding: 0 1.5rem;
     margin-inline: auto;
-    max-width: 80rem;
+    max-width: 1200px;
 
     @include breakpoint(tablet){
-        padding: 0 2rem;
+        padding: 0 4rem;
+    }
+}
+
+.narrow-container{
+    margin-inline: auto;
+    max-width: 50rem;
+    padding: 0 1.5rem;
+
+    @include breakpoint(tablet){
+        padding: 0 4rem;
     }
 }
 

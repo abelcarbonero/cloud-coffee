@@ -1,37 +1,66 @@
 @use '../abstracts/' as *;
 
 .form {
+  width: 100%;
   padding-top: 2rem;
-  max-width: 40rem;
+  
+  display: flex;
+  flex-direction: column;
 
- 
-  &__group {
+&__group {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-block: 0.5rem;
+
+    @include breakpoint(tablet){
+      padding-block: 1rem;
+      ;
+    }
   }
 
   &__label {
     font-size: var(--fs-200);
     text-transform: uppercase;
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-600);
     padding-block: 0.5rem;
+
+    @include breakpoint(tablet){
+      font-size: var(--fs-300);
+    }
   }
 
   &__input {
     padding-block: 0.5rem;
     padding-left: 1rem;
     border-radius: 4px;
+
+    @include breakpoint(tablet){
+      padding-block: .7rem;
+      font-size: var(--fs-400);
+    }
   }
 
   &__textarea{
-      padding: 1rem;
+      height: 7rem;
+      resize: none;
+      padding:  .5rem 1rem;
       border-radius: 4px;
-      margin-top: .5rem;
+      margin-top: 1rem;
+
+      @include breakpoint(tablet){
+        height: 10rem;
+        margin-top: 1.5rem;
+        font-size: var(--fs-400);
+      }
   }
 
   &__btn{
       margin-top: 1rem;
       width: 100%;
+
+      @include breakpoint(tablet){
+        margin-top: 1.5rem;
+      }
   }
 }

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>CloudCoffee | Shop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar flex">
+            <!-- logo  -->
+            <a href="#" class="flex">
+                <img class="top-bar__logo" src="./dist/images/logo.png" alt="CloudCoffee logo" />
+            </a>
+            <!-- main nav -->
+            <nav class="main-nav grid">
+                <ul class="main-nav__list flex" style="--gap: 1.4rem">
+                    <li class="main-nav__item">
+                        <a href="/index.html" class="main-nav__link">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="/#about" class="main-nav__link">Nosotros</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#contact" class="main-nav__link">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#shop" class="main-nav__link">Tienda</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#menu" class="main-nav__link">La Carta</a>
+                    </li>
+                </ul>
+                <!-- mobile social links -->
+                <div class="socials">
+                    <ul class="socials__list flex">
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-instagram" width="48" height="48"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                                    <circle cx="12" cy="12" r="3" />
+                                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-facebook" width="48" height="48"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-twitter" width="48" height="48"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                  <span class="cart-icon__quantity"></span>
+            </div>
+            <!-- hamburger button  -->
+            <button class="menu-btn flex">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main class="main container">
+        <div class="final-products-container">
+            <h2 class="section-title">Nuestra Tienda</h2>
+            <section class="final-products">
+                <!-- CARD -->
+                <template class="card">
+                    <div class="card__container">
+                        <img class="card__img" src="./dist/images/coffee-bag-1.jpg" alt="café">
+                        <div class="card__description">
+                            <h3 class="card__title">Café</h3>
+                            <p class="card__country">Jamaica</p>
+                            <p>€<span class="card__price">6.99</span></p>
+                        </div>
+                        <button class="card__btn btn--add" title="añade al carrito">
+                            <svg class="btn-add__img" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-shopping-cart-plus" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="6" cy="19" r="2" />
+                                <circle cx="17" cy="19" r="2" />
+                                <path d="M17 17h-11v-14h-2" />
+                                <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                <path d="M15 6h6m-3 -3v6" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </template>
+                <!-- CART -->
+            </section>
+        </div>
+        <section class="cart section">
+            <div class="cart-items">
+                <!-- CART ITEM -->
+                <template class="cart-item-template">
+                    <div class="cart-item">
+                        <button class="cart-item__remove btn--remove">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <path d="M10 10l4 4m0 -4l-4 4" />
+                              </svg>
+                        </button>
+                        <div class="cart-item__info">
+                           
+                            <img class="cart-item__img" src="./dist/images/coffee-bag-1.jpg" alt="coffee">
+                            <h4 class="cart-item__title">Café Blend</h4>
+                        </div>
+                        <p><span class="cart-item__price">9,99 </span>€</p>
+                        <div class="cart-item__units">
+                            <button class="btn--cart btn--minus">-</button>
+                            <div class="cart-item__quantity">1</div>
+                            <button class="btn--cart btn--plus">+</button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <!-- CART FOOTER -->
+            <div class="cart-footer">
+                <p>El carrito está vacío - Comience a comprar</p>
+                <template class="cart-footer-template">
+                    <div class="cart-footer__subtotal">
+                        <p>Subtotal (<span class="cart-footer__quantity">0</span> items):</p>
+                        <p><span class="cart-footer__total">0</span>€</p>
+                    </div>
+                    <button class="btn btn--checkout">Proceed to checkout</button>
+                </template>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="footer__container narrow-container">
+            <div class="footer__title">
+                <h2 class="section-title section-title--white">
+                    Te vienes?
+                </h2>
+                <h3>Coffe.Eat.Love.</h3>
+            </div>
+            <div class="footer__wrapper">
+                <div class="footer__adress">
+                    <h3 class="section-heading--2 section-heading--white">Dónde Estamos</h3>
+                    <p>
+                        Calle Juan Valdés 7 <br />
+                        05567 Invent
+                    </p>
+                </div>
+                <div class="footer__hours">
+                    <h3 class="section-heading--2 section-heading--white">Nuestro Horario</h3>
+                    <p>Mártes a Sábado / 9:00am - 5:00pm</p>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__contact__wrapper">
+                    <h3 class="section-title section-title--white">Contacto</h3>
+                    <p>Teléfono: +34 952 00 00 00</p>
+                    <p>
+                        Mándanos un mensaje vía email, mediante nuestro formulario o síguenos en redes sociales.
+                        Estaremos encantados de saber de ti.
+                    </p>
+                    <p>
+                        Email :
+                        <a href="mailto:cloudcoffee@gmail.com">cloudcoffee@gmail.com</a>
+                    </p>
+                </div>
+                <!-- Form -->
+                <div class="form__container">
+                    <form class="form">
+                        <div class="form__container">
+                            <div class="form__group">
+                                <label class="form__label" for="name">Nombre *</label>
+                                <input class="form__input" type="text" name="name" id="name" required />
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="email">Email *</label>
+                                <input class="form__input" type="email" name="email" id="name" required />
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="phone">Teléfono</label>
+                                <input class="form__input" type="phone" name="phone" id="name" />
+                            </div>
+                            <div class="form__group">
+                                <textarea class="form__textarea" name="message" id="message"
+                                    placeholder="Deja tu mensaje..." required></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn--white form__btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__socials socials">
+            <ul class="socials__list flex footer__list">
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.0" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.0" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.0" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p>CloudCoffee© - 2022</p>
+        </div>
+
+        </div>
+    </footer>
+    <script src="./dist/script.js"></script>
+</body>
+
+</html>
