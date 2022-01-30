@@ -13,6 +13,10 @@
     height: 1.425rem;
   }
 
+  @include breakpoint(laptop){
+    display: none;
+  }
+
   & span {
     position: absolute;
     display: block;
@@ -26,6 +30,10 @@
 
     @include breakpoint(tablet){
       width: 2.5rem;
+    }
+
+    @include breakpoint(laptop){
+      display: none;
     }
 
     &:nth-child(1) {

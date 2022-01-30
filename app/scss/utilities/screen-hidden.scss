@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+.sm-screen-hidden{
+    display: none;
+}
+
+.lg-screen-hidden{
+    @include breakpoint(laptop){
+        display: none;
+    }
+}
+

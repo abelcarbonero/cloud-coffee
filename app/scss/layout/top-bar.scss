@@ -1,21 +1,16 @@
 @use "../abstracts/" as *;
 .top-bar {
-  height: 100%;
-  width: 100%;
+  height: var(--header-height);
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-
-  @include breakpoint(tablet) {
-    padding: 4rem 0;
-  }
+  
 
   &__logo {
-   width: 150px;
-
-
-   @include breakpoint(tablet){
-     width: 200px;
-   }
+    width: 150px;
+    
+    @include breakpoint(tablet) {
+      width: 200px;
+    }
   }
 }

@@ -1,16 +1,23 @@
 const mainNav = document.querySelector(".main-nav");
 const hamburgerBtn = document.querySelector(".menu-btn");
+const body = document.querySelector('body')
 
-//***** SHOW NAV MENU - BLUR & PREVENT BODY SCROLL
+//***** SHOW NAV MENU AND NO-SCROLL
 const showMenu = () => {
   mainNav.classList.toggle("active");
   hamburgerBtn.classList.toggle("active");
-  // body.classList.toggle("blurOverflow");
+  body.classList.toggle("no-scroll");
 };
 
 document.addEventListener("click", (e) => {
-  if (e.target.matches(".menu-btn")) {
+  if (e.target.matches(".menu-btn")){
     showMenu();
+  }
+
+  if(e.target.matches('.main-nav__link')){
+    mainNav.classList.remove("active");
+    hamburgerBtn.classList.remove("active");
+    body.classList.remove("no-scroll");
   }
 });
 
@@ -25,15 +32,14 @@ const templateCartFooter = document.querySelector(
   ".cart-footer-template"
 ).content;
 const fragment = document.createDocumentFragment();
+const cartMenuIcon = document.querySelector(".cart-icon__quantity");
 
 let cart = {};
 
 
 
-window.addEventListener("DOMContentLoaded", () => {
-  products();
-
-  if(localStorage.getItem('storagedCart')){
+document.addEventListener("DOMContentLoaded", () => {
+ if(localStorage.getItem('storagedCart')){
     cart = JSON.parse(localStorage.getItem('storagedCart'))
     renderCart()
   }
@@ -125,6 +131,9 @@ const renderCart = () => {
   localStorage.setItem('storagedCart', JSON.stringify(cart))
 };
 
+
+
+
 const renderCartFooter = () => {
   cartFooter.innerHTML = "";
   if (Object.keys(cart) === 0) {
@@ -154,12 +163,10 @@ const renderCartFooter = () => {
   fragment.appendChild(clone);
 
   cartFooter.appendChild(fragment);
-  const cartIcon = document.querySelector(".cart-icon__quantity");
-  cartIcon.textContent = totalQuantity;
-  if (totalQuantity === 0) {
-    cartIcon.textContent = "";
-  }
+  
 };
+
+
 
 cartItems.addEventListener("click", (e) => {
   btnAction(e);
@@ -192,6 +199,8 @@ const btnAction = (e) => {
 
   e.stopPropagation();
 };
+
+
 
 
 

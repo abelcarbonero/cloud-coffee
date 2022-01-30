@@ -15,6 +15,12 @@
         font-size: var(--fs-500);
     }
 
+    &--checkout{
+        font-size: var(--fs-200);
+        display: block;
+        padding: .5rem 1rem;
+    }
+
    
 
     &:hover{

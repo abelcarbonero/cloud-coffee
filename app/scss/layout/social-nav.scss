@@ -5,13 +5,19 @@
 
     @include breakpoint(tablet){
         gap: 2.5rem;
-       
+    }
+
+    @include breakpoint(laptop){
+        display: none;
     }
 
     & svg{
+        width: 36px;
+        height: 36px;
+        
         @include breakpoint(tablet){
-            width: 48px;
-            height: 48px;
+            width: 36px;
+            height: 36px;
         }
     }
 

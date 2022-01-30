@@ -1,6 +1,20 @@
+.shop-main{
+    position: relative;
+}
+
+
 .cart{
     display: grid;
     gap: 4rem;
+    align-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0 1rem;
+   
 
     &-items{
         display: grid;
@@ -8,7 +22,8 @@
     }
 
     &-footer{
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 2rem;
 
         &__subtotal{
