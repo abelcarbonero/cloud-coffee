@@ -1,16 +1,14 @@
 @use "../abstracts/" as *;
 :root {
   /* font-sizes */
-  --fs-biggest: 7rem;
-  --fs-big: 4.375rem; //70px
-  --fs-900: 2.25rem;
-  --fs-800: 2rem; //32px
-  --fs-700: 1.75rem; //28px
-  --fs-600: 1.5rem; // 24px
-  --fs-500: 1.25rem; //20px
-  --fs-400: 1.125rem; //18px
-  --fs-300: 1rem; // 16px
-  --fs-200: 0.875rem; // 14px
+  --fs-biggest: 4.4rem;
+  --fs-xxl: 3.6rem; //70px
+  --fs-xl: 2.4rem; //38px
+  --fs-lg: 2rem; //32px
+  --fs-md: 1.6rem; // 24px
+  --fs-sm: 1.125rem; //18px
+  --fs-xs: 1rem; // 16px
+
   /* font-weight */
   --fw-300: 300;
   --fw-400: 400;
@@ -18,48 +16,48 @@
   --fw-700: 700;
 }
 
+
+// HEADINGS
 .section-title {
-  font-size: var(--fs-600);
+  font-size: var(--fs-lg);
   color: var(--color-600);
   text-transform: uppercase;
   margin-bottom: 1rem;
 
-  &--white{
+  &--white {
     color: var(--color-100);
   }
 
   @include breakpoint(tablet) {
-    font-size: var(--fs-800);
+    font-size: var(--fs-xl);
   }
 }
 
-.section-heading {
-  font-size: var(--fs-600);
-  margin-bottom: 1.5rem;
-  color: var(--color-500);
+.heading {
+ 
+&-1 {
+    color: var(--color-500);
+    font-size: var(--fs-md);
+    
+    &--white {
+      color: var(--color-100);
+    }
 
-  &--white{
-    color: var(--color-100);
-  }
-
-  @include breakpoint(tablet) {
-    font-size: var(--fs-800);
-    margin-bottom: 2rem;
+    @include breakpoint(tablet) {
+      font-size: var(--fs-xl);
+    }
   }
 
   &-2 {
-    font-size: var(--fs-600);
+    color: var(--color-500);
+    font-size: var(--fs-sm);
+
+    &--white {
+      color: var(--color-100);
+    }
+
+    @include breakpoint(tablet) {
+      font-size: var(--fs-md);
+    }
   }
 }
-
-.section-description {
-  font-size: var(--fs-300);
-  color: var(--color-300);
-  line-height: 1.7;
-
-  @include breakpoint(tablet) {
-    font-size: var(--fs-300);
-  }
-}
-
-

@@ -1,66 +1,45 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 .hero {
-  padding-bottom: 2rem;
   position: relative;
 
-  @include breakpoint(tablet){
-    padding-bottom: 4rem;
-    padding-top: 2rem;
+  @include breakpoint(tablet) {
   }
-  
+
+  &__title {
+    position: absolute;
+    top: 5.3rem;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    color: var(--color-600);
+    text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.3);
+
+    @include breakpoint(tablet) {
+      font-size: 6rem;
+      top: 9.3rem;
+    }
+  }
 
   &__header {
     & p {
-      font-size: var(--fs-500);
-      color: var(--color-300);
-      padding-bottom: 4rem;
       max-width: 21ch;
 
-      @include breakpoint(tablet){
-          font-size: var(--fs-700);
-          line-height: 1.1;
-          padding-top: 2rem;
-          padding-bottom: 6rem;
+      @include breakpoint(tablet) {
+        line-height: 1.1;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
       }
-     
     }
-
-    & h2 {
-        position: absolute;
-        top: 5.5rem;
-        font-size: var(--fs-big);
-        text-transform: uppercase;
-        font-weight: var(--fw-700);
-        color: var(--color-600);
-        text-shadow: 2px 6px 8px rgba(0,0,0,0.3);
-
-        @include breakpoint(tablet){
-              font-size: var(--fs-biggest);
-              top: 10.5rem;
-          }
-        
-      }
   }
 
   &__description {
-    font-size: var(--fs-500);
-    color: var(--color-300);
-    margin-top: 2.5rem;
-
-    @include breakpoint(tablet){
-      margin-top: 5rem;
-      font-size: var(--fs-600);
+    @include breakpoint(tablet) {
       text-align: center;
-      width: 45ch;
     }
-    
 
-    & p{
-     
+    & p {
       line-height: 1.5;
     }
   }
-
-  
 }

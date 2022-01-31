@@ -107,7 +107,7 @@
     <section class="hero">
       <div class="hero__header container">
         <p>No es solo café, es una experiencia.</p>
-        <h2>
+        <h2 class="hero__title">
           Coffee. <br />
           Eat. <br />
           Love.
@@ -128,86 +128,90 @@
         </p>
       </div>
     </section>
-    <!-- pastries section -->
-    <section class="section product-section row-reverse section-container">
-      <div class="product-section__column-1">
-        <h2 class="section-heading">Dulces</h2>
-        <p class="section-description">
-          A selection of expertly handcrafted pastries made with real butter
-          and premium ingredients baked fresh every day. Favourites include
-          almond croissants, seasonal danish and ham & cheese croissants.
-        </p>
-      </div>
-      <div class="product-section__column-2">
-        <picture>
-          <source srcset="/dist/images/desktop/pastries-desktop.jpg" media="(min-width: 600px)" />
-          <img class="product-section__img" src="/dist/images/pastries-mobile.jpg" alt="pastries" />
-        </picture>
-      </div>
+    <!-- FOOD SECTION -->
+    <section class="section food">
+      <!-- pastries article -->
+      <article class="pastries">
+        <div class="column-1 reverse">
+          <h2 class="heading-1">Dulces</h2>
+          <p >
+            A selection of expertly handcrafted pastries made with real butter
+            and premium ingredients baked fresh every day. Favourites include
+            almond croissants, seasonal danish and ham & cheese croissants.
+          </p>
+        </div>
+        <div class="column-2">
+          <picture>
+            <source srcset="/dist/images/desktop/pastries-desktop.jpg" media="(min-width: 600px)" />
+            <img class="food__img" src="/dist/images/pastries-mobile.jpg" alt="pastries" />
+          </picture>
+        </div>
+      </article>
+      <!-- lunch article -->
+      <article class="lunch ">
+        <div class="column-1">
+          <h2 class="heading-1">Sandwiches</h2>
+          <p>Available daily.</p>
+          <p>
+            Inspired by the Fraser Valley's produce and meats, sandwiches on
+            house made bread rotate through the seasons. Wholesome soups and
+            salads are periodically featured as part of a select menu — check
+            out our social media for availability.
+          </p>
+        </div>
+        <div class="column-2">
+          <picture>
+            <source srcset="/dist/images/desktop/lunch-desktop.jpg" media="(min-width: 600px)" />
+            <img class="food__img" src="/dist/images/lunch-mobile.jpg" alt="pastries" />
+          </picture>
+        </div>
+      </article>
+      <!-- coffee article -->
+      <article class="coffee">
+        <div class="column-1 reverse">
+          <h2 class="heading-1">Nuestro Café</h2>
+          <p>
+            We decided not to stop at just croissants and danish. Delectable
+            menu items include lemon sugar buns, cookies, bars, cinnamon buns
+            and sticky buns to name a few. Don't miss our Saturday line up
+            featuring a wide array of glazed and filled doughnuts.
+          </p>
+        </div>
+        <div class="column-2">
+          <picture>
+            <source srcset="/dist/images/desktop/coffee-desktop.jpg" media="(min-width: 600px)" />
+            <img class="food__img" src="/dist/images/coffee-mobile.jpg" alt="pastries" />
+          </picture>
+        </div>
+      </article>
+      <!-- donuts article -->
+      <article class="donuts">
+        <div class="column-1">
+          <h2 class="heading-1">Date un capricho</h2>
+          <p>
+            Our custom roasted beans are thoughtfully crafted by Republica
+            Coffee Roasters in Fort Langley, so whether it's an Americano, a
+            cappuccino or a latte paired with one of our house made syrups,
+            we've got you covered. Seasonal flavours, teas and juices are also
+            available.
+          </p>
+        </div>
+        <div class="column-2">
+          <picture>
+            <source srcset="/dist/images/desktop/pastries-mix-desktop.jpg" media="(min-width: 600px)" />
+            <img class="food__img" src="/dist/images/pastries-mix-mobile.jpg" alt="pastries" />
+          </picture>
+        </div>
+      </article>
     </section>
-    <!-- lunch section -->
-    <section class="section product-section section-container">
-      <div class="product-section__column-1">
-        <h2 class="section-heading">Sandwiches</h2>
-        <p class="section-description">Available daily.</p>
-        <p class="section-description">
-          Inspired by the Fraser Valley's produce and meats, sandwiches on
-          house made bread rotate through the seasons. Wholesome soups and
-          salads are periodically featured as part of a select menu — check
-          out our social media for availability.
-        </p>
-      </div>
-      <div class="product-section__column-2">
-        <picture>
-          <source srcset="/dist/images/desktop/lunch-desktop.jpg" media="(min-width: 600px)" />
-          <img class="product-section__img" src="/dist/images/lunch-mobile.jpg" alt="pastries" />
-        </picture>
-      </div>
-    </section>
-    <!-- coffee section -->
-    <section class="section product-section section-container row-reverse">
-      <div class="product-section__column-1">
-        <h2 class="section-heading">Nuestro Café</h2>
-        <p class="section-description">
-          We decided not to stop at just croissants and danish. Delectable
-          menu items include lemon sugar buns, cookies, bars, cinnamon buns
-          and sticky buns to name a few. Don't miss our Saturday line up
-          featuring a wide array of glazed and filled doughnuts.
-        </p>
-      </div>
-      <div class="product-section__column-2">
-        <picture>
-          <source srcset="/dist/images/desktop/coffee-desktop.jpg" media="(min-width: 600px)" />
-          <img class="product-section__img" src="/dist/images/coffee-mobile.jpg" alt="pastries" />
-        </picture>
-      </div>
-    </section>
-    <!-- donuts section -->
-    <section class="section product-section section-container">
-      <div class="product-section__column-1">
-        <h2 class="section-heading">Date un capricho</h2>
-        <p class="section-description">
-          Our custom roasted beans are thoughtfully crafted by Republica
-          Coffee Roasters in Fort Langley, so whether it's an Americano, a
-          cappuccino or a latte paired with one of our house made syrups,
-          we've got you covered. Seasonal flavours, teas and juices are also
-          available.
-        </p>
-      </div>
-      <div class="product-section__column-2">
-        <picture>
-          <source srcset="/dist/images/desktop/pastries-mix-desktop.jpg" media="(min-width: 600px)" />
-          <img class="product-section__img" src="/dist/images/pastries-mix-mobile.jpg" alt="pastries" />
-        </picture>
-      </div>
-    </section>
+   
     <!-- about us section  -->
     <section class="about section container" id="about">
       <div class="about__container grid">
         <div class="about__column-1">
           <h2 class="section-title">Sobre Nosotros</h2>
-          <h3 class="section-heading-2">Coffee.Eat.Love.</h3>
-          <p class="section-description">
+          <h3 class="heading-1">Coffee.Eat.Love.</h3>
+          <p>
             En CloudCoffee creemos que las cosas más simples de la vida son
             casi siempre las más bellas y las que merecen ser compartidas.
             Hemos creado un espacio donde unir el diseño, el mejor café y a
@@ -236,18 +240,18 @@
         <h2 class="section-title section-title--white">
           Te vienes?
         </h2>
-        <h3>Coffe.Eat.Love.</h3>
+        <h3 class="heading-2 heading-2--white">Coffe.Eat.Love.</h3>
       </div>
       <div class="footer__wrapper">
         <div class="footer__adress">
-          <h3 class="section-heading--2 section-heading--white">Dónde Estamos</h3>
+          <h3 class="heading-1 heading-1--white">Dónde Estamos</h3>
           <p>
             Calle Juan Valdés 7 <br />
             05567 Invent
           </p>
         </div>
         <div class="footer__hours">
-          <h3 class="section-heading--2 section-heading--white">Nuestro Horario</h3>
+          <h3 class="heading-1 heading-1--white">Nuestro Horario</h3>
           <p>Mártes a Sábado / 9:00am - 5:00pm</p>
         </div>
       </div>

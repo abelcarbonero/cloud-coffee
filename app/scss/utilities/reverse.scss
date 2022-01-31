@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.reverse{
+  @include breakpoint(tablet) {
+    order: 1;
+  }
+}
