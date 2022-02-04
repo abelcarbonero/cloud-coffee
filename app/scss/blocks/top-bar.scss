@@ -3,15 +3,17 @@
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 0 1.5rem;
 
   @include breakpoint(tablet){
     padding: 0 3rem;
+    
   }
 
   @include breakpoint(laptop){
     padding: 0 5rem;
+    align-items: flex-end;
   }
   
 
