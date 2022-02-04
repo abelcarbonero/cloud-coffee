@@ -1,0 +1,96 @@
+@use "../abstracts/" as *;
+
+.hero {
+  width: 100%;
+  position: relative;
+  
+  
+&__header {
+    position: relative;
+
+    @include breakpoint(laptop) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 2rem;
+    }
+  }
+
+  &__tagline {
+    max-width: 21ch;
+    line-height: 1.2;
+    font-weight: var(--fw-300);
+
+    @include breakpoint(tablet) {
+      font-size: var(--fs-sm);
+    }
+
+    @include breakpoint(laptop) {
+      grid-column: 2 / 3;
+      justify-self: center;
+      font-size: var(--fs-md);
+    }
+
+    @include breakpoint(desktop) {
+      justify-self: end;
+      font-size: var(--fs-lg);
+      padding: 1.5rem;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 4rem;
+    font-size: var(--fs-xxl);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    color: var(--color-600);
+    text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.3);
+
+    @include breakpoint(tablet) {
+      font-size: 5rem;
+      top: 5.6rem;
+    }
+
+    @include breakpoint(laptop) {
+      top: 0rem;
+      left: 5rem;
+      font-size: 7rem;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 8.75rem;
+      top: 0.75rem;
+    }
+  }
+
+  &__img {
+    margin-top: var(--space-xl);
+    aspect-ratio:16/9;
+    object-fit: cover;
+
+    @include breakpoint(tablet) {
+      margin-top: var(--space-xxl);
+      aspect-ratio: 21 / 9;
+    }
+  }
+
+  &__description {
+    font-size: var(--fs-sm);
+    padding-top: var(--space-xl);
+
+    @include breakpoint(tablet) {
+     text-align: center;
+     font-size: var(--fs-md);
+     padding-top: var(--space-xxl);
+    }
+
+    @include breakpoint(laptop) {
+     
+      padding-top: 7rem;
+     }
+}
+
+  & p:first-child{
+    margin-bottom: var(--space-sm);
+  }
+}

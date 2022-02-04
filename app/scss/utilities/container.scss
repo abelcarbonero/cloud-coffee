@@ -5,17 +5,18 @@
     max-width: 1200px;
 
     @include breakpoint(tablet){
-        padding: 0 4rem;
+        padding: 0 3rem;
     }
 }
 
-.narrow-container{
+.container-narrow{
     margin-inline: auto;
-    max-width: 50rem;
-    padding: 0 1.5rem;
+    max-width: 37rem;
+    padding-inline: 1.5rem;
 
-    @include breakpoint(tablet){
-        padding: 0 4rem;
+   @include breakpoint(laptop){
+        max-width: 48rem;
+       
     }
 }
 

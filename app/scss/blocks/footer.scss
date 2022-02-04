@@ -1,0 +1,104 @@
+@use "../abstracts/" as *;
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+  color: var(--color-100);
+  background-color: var(--color-600);
+
+  @include breakpoint(tablet) {
+    padding-top: 6rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding-top: 8rem;
+   
+  }
+
+  &__container {
+    gap: 5rem;
+
+    @include breakpoint(laptop) {
+      gap: 7rem;
+    }
+  }
+
+  &__info__wrapper {
+    gap: var(--space-xl);
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: var(--space-xxl);
+    }
+
+    & h3 {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__contact__wrapper {
+    @include breakpoint(laptop) {
+      padding-top: 0.5rem;
+    }
+
+    & a{
+      color: white;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: var(--space-xl);
+
+    & h3 {
+      margin-top: 0.25rem;
+    }
+  }
+
+  &__contact__container {
+   
+    position: relative;
+    @include breakpoint(laptop) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      
+    }
+  }
+  
+  
+  &__socials {
+   
+    margin-top: var(--space-xl);
+
+    @include breakpoint(tablet){
+      padding-block: 2rem;
+    }
+
+    @include breakpoint(laptop){
+      position: absolute;
+      bottom: 10.5rem;
+    }
+
+    & > p {
+      text-align: center;
+      font-size: var(--fs-200);
+      color: var(--color-300);
+      margin-top: 0.75rem;
+    }
+  }
+
+  &__list {
+    justify-content: center;
+    padding: 0;
+  }
+
+  &__author{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    @include breakpoint(laptop){
+      margin-top: 4rem;
+    }
+  }
+}

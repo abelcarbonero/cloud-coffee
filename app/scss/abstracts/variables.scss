@@ -1,14 +1,18 @@
 :root{
     --header-height: 5rem;
+    --section-spacing: 3rem;
     //gap
-    --gap-xs: .5rem;
-    --gap-sm: 1.5rem;
-    --gap-md: 2rem;
-    --gap-lg: 3rem;
-    --gap-xl: 5rem;
+    --space-xs: .5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 5rem;
     //marging
-    --margin-xs: .5rem
-    --margin-sm: 1rem;
+    --margin-xs: 1rem;
+    --margin-sm: 1.5rem;
     --margin-md: 2rem;
-    --margin-lg: 3rem
+    --margin-lg: 4rem;
+    --margin-xl: 5rem;
+    --margin-xxl: 7rem;
 }

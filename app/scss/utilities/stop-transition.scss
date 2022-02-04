@@ -1,0 +1,4 @@
+// to stop main-nav transition when resize 
+body.stop-transition .main-nav{
+    transition: none !important;
+  }

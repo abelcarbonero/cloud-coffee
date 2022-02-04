@@ -1,0 +1,107 @@
+@use "../abstracts/" as *;
+.main-nav {
+  background-color: var(--color-500);
+  color: var(--color-100);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(laptop){
+    background-color: transparent;
+    color: var(--color-500);
+    position: initial;
+    width: initial;
+    height: initial;
+    padding: initial;
+    z-index: initial;
+    transform: initial;
+    transition: initial;
+    opacity: initial;
+    visibility: initial;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+
+    @include breakpoint(laptop){
+      flex-direction: row;
+      justify-self: end;
+     
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    font-size: var(--fs-md);
+    padding: 0.5rem;
+    letter-spacing: 1.5px;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--color-100);
+
+    @include breakpoint(tablet) {
+      font-size: var(--fs-lg);
+      color: var(--color-500);
+    }
+
+    @include breakpoint(laptop){
+      font-size: var(--fs-sm);
+      font-weight: 700;
+    }
+
+    &:after,
+    &.current:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -1rem;
+      transform: translateY(-50%);
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: var(--color-accent);
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      @include breakpoint(laptop){
+        top: initial;
+        right: initial;
+        bottom: -.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+    }
+
+    &.current:after {
+      opacity: 1 !important;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

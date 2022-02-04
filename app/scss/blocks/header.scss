@@ -4,4 +4,12 @@
    background-color: var(--color-100);
    width: 100%;
   z-index: 99;
+
+  @include breakpoint(tablet){
+    padding-top: 1rem;
+  }
+
+  @include breakpoint(laptop){
+    padding-top: 2rem;
+  }
 }

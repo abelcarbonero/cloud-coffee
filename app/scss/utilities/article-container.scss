@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+.article-container {
+  @include breakpoint(laptop) {
+    margin-inline: auto;
+    max-width: 1200px;
+  }
+}
+
+

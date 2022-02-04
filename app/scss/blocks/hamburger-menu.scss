@@ -1,4 +1,4 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 .menu-btn {
   position: relative;
   width: 1.8rem;
@@ -6,35 +6,17 @@
   background: transparent;
   z-index: 20;
   transition: transform 0.4s;
-  
-
-  @include breakpoint(tablet){
-    width: 2.1rem;
-    height: 1.425rem;
-  }
-
-  @include breakpoint(laptop){
-    display: none;
-  }
 
   & span {
     position: absolute;
     display: block;
-    right: .1rem;
+    right: 0.1rem;
     width: 1.8rem;
     height: 3px;
     background: #000;
     transition: top 0.4s 0.4s, opacity 0.3s 0s, transform 0.4s 0s,
       background-color 0.4s;
     pointer-events: none;
-
-    @include breakpoint(tablet){
-      width: 2.5rem;
-    }
-
-    @include breakpoint(laptop){
-      display: none;
-    }
 
     &:nth-child(1) {
       top: 0;

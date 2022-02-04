@@ -4,13 +4,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1.5rem;
+
+  @include breakpoint(tablet){
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(laptop){
+    padding: 0 5rem;
+  }
   
 
   &__logo {
-    width: 150px;
+    width: 125px;
     
     @include breakpoint(tablet) {
-      width: 200px;
+      width: 175px;
     }
   }
 }

@@ -1,10 +1,21 @@
+@use "../abstracts/" as *;
+
 body {
   margin: 0;
   padding: 0;
   font-family: var(--ff-primary);
-  font-size: var(--fs-XS);
+  font-size: var(--fs-xs);
   color: var(--color-400);
   background-color: var(--color-100);
   min-height: 100vh;
   line-height: 1.5;
+}
+
+
+* > p + p{
+  margin-top:var(--space-sm);
+
+  @include breakpoint(laptop){
+    margin-top: var(--space-md);
+  }
 }

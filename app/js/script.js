@@ -21,7 +21,29 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// //*****SHOPPING CART****//
+//*****STOP RESPONSIVE TRANSITION WHEN RESIZE****//
+stopResponsiveTransition();
+
+function stopResponsiveTransition() {
+  const classes = document.body.classList;
+  let timer = null;
+  window.addEventListener('resize', function () {
+    if (timer){
+      clearTimeout(timer);
+      timer = null;
+    }else {
+      classes.add('stop-transition');
+    }
+    timer = setTimeout(() => {
+      classes.remove('stop-transition');
+      timer = null;
+    }, 100);
+  });
+}
+
+
+
+//*****SHOPPING CART****//
 
 const cards = document.querySelector(".final-products");
 const templateCard = document.querySelector(".card").content;
@@ -180,6 +202,7 @@ const btnAction = (e) => {
     // product.quantity = cart[e.target.dataset.id].quantity + 1
     product.quantity++;
     cart[e.target.dataset.id] = { ...product };
+    
     renderCart();
   }
   //Disminuir cantidad
