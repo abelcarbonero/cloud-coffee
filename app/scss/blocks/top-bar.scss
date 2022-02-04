@@ -3,7 +3,7 @@
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 0 1.5rem;
 
   @include breakpoint(tablet){
@@ -16,10 +16,14 @@
   
 
   &__logo {
-    width: 125px;
+    width: 130px;
     
     @include breakpoint(tablet) {
-      width: 175px;
+      width: 160px;
+    }
+
+    @include breakpoint(tablet) {
+      width: 180px;
     }
   }
 }

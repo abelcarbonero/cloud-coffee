@@ -11,7 +11,17 @@
     @include breakpoint(laptop) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin-top: 2rem;
+      margin-top: 4rem;
+    }
+
+    @include breakpoint(desktop){
+      margin-top: 6rem;
+    }
+
+    & p{
+      @include breakpoint(laptop){
+        margin-bottom: 1.25rem;
+      }
     }
   }
 
@@ -32,16 +42,18 @@
     }
 
     @include breakpoint(laptop) {
-      top: 0rem;
+      top: -.6rem;
       left: 5rem;
       font-size: 7rem;
     }
 
     @include breakpoint(desktop) {
       font-size: 8.75rem;
-      top: 0.75rem;
+      top: -.9rem;
     }
   }
+
+  
 
   &__img {
     margin-top: var(--space-xl);
@@ -70,7 +82,5 @@
      }
 }
 
-  & p:first-child{
-    margin-bottom: var(--space-sm);
-  }
+  
 }
