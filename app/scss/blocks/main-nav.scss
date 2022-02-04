@@ -58,12 +58,13 @@
 
     @include breakpoint(tablet) {
       font-size: var(--fs-lg);
-      color: var(--color-500);
+      
     }
 
     @include breakpoint(laptop){
       font-size: var(--fs-sm);
       font-weight: 700;
+      color: var(--color-500);
     }
 
     &:after,

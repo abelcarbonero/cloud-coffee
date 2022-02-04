@@ -13,7 +13,11 @@ body {
 
 
 * > p + p{
-  margin-top:var(--space-sm);
+  margin-top:var(--space-xs);
+
+  @include breakpoint(tablet){
+    margin-top: var(--space-sm);
+  }
 
   @include breakpoint(laptop){
     margin-top: var(--space-md);

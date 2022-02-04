@@ -15,27 +15,7 @@
     }
   }
 
-  &__tagline {
-    max-width: 21ch;
-    line-height: 1.2;
-    font-weight: var(--fw-300);
-
-    @include breakpoint(tablet) {
-      font-size: var(--fs-sm);
-    }
-
-    @include breakpoint(laptop) {
-      grid-column: 2 / 3;
-      justify-self: center;
-      font-size: var(--fs-md);
-    }
-
-    @include breakpoint(desktop) {
-      justify-self: end;
-      font-size: var(--fs-lg);
-      padding: 1.5rem;
-    }
-  }
+  
 
   &__title {
     position: absolute;

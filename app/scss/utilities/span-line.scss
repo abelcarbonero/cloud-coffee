@@ -1,0 +1,18 @@
+
+@use '../abstracts/' as *;
+.span-line{
+    max-width: 21ch;
+    line-height: 1.2;
+    font-weight: var(--fw-300);
+
+    @include breakpoint(tablet) {
+      font-size: var(--fs-sm);
+    }
+
+    @include breakpoint(laptop) {
+      grid-column: 2 / 3;
+      justify-self: center;
+      font-size: var(--fs-md);
+    }
+
+  }

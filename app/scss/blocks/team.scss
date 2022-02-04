@@ -1,130 +1,63 @@
 @use "../abstracts/" as *;
-.team{
-   
-    
-    &>p{
-        font-size: var(--fs-700);
-        font-weight: var(--fw-300);
-        line-height: 1.2;
-        margin-bottom: 2rem;
+
+.team {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+
+    @include breakpoint(tablet) {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      gap: var(--space-lg);
     }
 
-    &__container{
-        margin-top: 3rem;
-        display: grid;
-        gap: 4rem;
+    @include breakpoint(laptop) {
+      margin-top: var(--space-lg);
+    }
+  }
 
-        @include breakpoint(tablet){
-            margin-top: 4rem;
-            gap: 6rem;
-        }
-        
+  &__container {
+    gap: var(--space-xxl);
+    margin-top: var(--space-lg);
+
+    @include breakpoint(tablet) {
+      gap: var(--space-xxl);
+      margin-top: var(--space-xxl);
+    }
+  }
+
+  &__member {
+    gap: var(--space-sm);
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
     }
 
-    &__member{
-        display: grid;
-        gap: 2.5rem;
+    &-img {
+      aspect-ratio: 6/7;
+      object-fit: cover;
 
-        @include breakpoint(tablet){
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-    }
-    
-    &__img{
-        aspect-ratio: 3/4;
-        object-fit: cover;
-      
-
-        @include breakpoint(tablet){
-            aspect-ratio: 4/5;
-            
-        }
+      @include breakpoint(tablet) {
+      }
     }
 
-    &__content{
-       display: grid;
-       gap: .5rem;
-       
-
-       @include breakpoint(tablet){
-            place-content: start;
-            gap: 2rem;
-        }
+    &-content {
+      @include breakpoint(laptop) {
+        align-self: center;
+      }
     }
 
-    &__header{
-       text-transform: uppercase;
+    &-description {
+      margin-top: var(--space-sm);
     }
-
-    &__title{
-        font-size: var(--fs-700);
-        font-weight: var(--fw-700);
-        padding-bottom: .2rem;
-        letter-spacing: 3px;
-
-        @include breakpoint(tablet){
-            font-size: var(--fs-900);
-        }
-    }
-
-    &__subtitle{
-       font-size: var(--fs-400);
-       letter-spacing: 2px;
-
-       @include breakpoint(tablet){
-        font-size: var(--fs-500);
-    }
-    }
-
-    &__description{
-        font-size: var(--fs-300);
-        color: var(--color-300);
-
-        @include breakpoint(tablet){
-            font-size: var(--fs-400);
-        }
-       
-        & > p {
-           margin-bottom: .25rem;
-           line-height: 1.6;
-
-           @include breakpoint(tablet){
-            margin-bottom: 1rem;
-        }
-       }
-    }
-
-    &__link{
-        display: flex;
-        justify-content: center;
-
-        & .underline-link{
-            display: grid;
-            place-content: center;
-            position: relative;
-            text-transform: uppercase;
-            font-size: var(--fs-200);
-            font-weight: var(--fw-700);
-            position: relative;
-           
-        
-            &::after{
-                content: '';
-                position: absolute;
-                width: 100%;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                height: 2px;
-                background-color: var(--color-500);
-            }
-        }
-        
-        
-    }
+  }
 }
 
+.btn__home{
+  justify-self: center;
 
-
-
+  @include breakpoint(laptop){
+      margin-block: 2rem;
+  }
+}

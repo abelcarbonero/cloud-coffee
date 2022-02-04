@@ -20,3 +20,14 @@
     }
 }
 
+.container-md{
+    margin-inline: auto;
+    max-width: 60rem;
+    padding-inline: 1.5rem;
+
+    @include breakpoint(tablet){
+        padding: 0 3rem;
+    }
+}
+
+
