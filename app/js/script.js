@@ -21,6 +21,43 @@ document.addEventListener("click", (e) => {
   }
 });
 
+
+//***** SHOW TO TOP BTN WHEN SCROLL DOWN *****
+const scrollMenu = () => {
+  const scrollTop = document.querySelector(".scroll-top");
+
+  window.scrollY > 200
+    ? scrollTop.classList.add("show-top-btn")
+    : scrollTop.classList.remove("show-top-btn");
+};
+
+window.addEventListener("scroll", scrollMenu);
+
+
+//***** SHOW-HIDE TOP BAR WHEN SCROLL *****
+const header = document.querySelector(".header");
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+
+  if (currentScroll <= 0) {
+    header.classList.remove("scroll-up");
+  }
+
+  if (currentScroll > lastScroll && !header.classList.contains("scroll-down")) {
+    header.classList.remove("scroll-up");
+    header.classList.add("scroll-down");
+  }
+  if (currentScroll < lastScroll && header.classList.contains("scroll-down")) {
+    header.classList.remove("scroll-down");
+    header.classList.add("scroll-up");
+  }
+
+  lastScroll = currentScroll;
+});
+
+
 //*****STOP RESPONSIVE TRANSITION WHEN RESIZE****//
 stopResponsiveTransition();
 
@@ -40,6 +77,8 @@ function stopResponsiveTransition() {
     }, 100);
   });
 }
+
+
 
 
 

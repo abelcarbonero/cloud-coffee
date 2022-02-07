@@ -12,7 +12,7 @@
 
   @include breakpoint(laptop) {
     padding-top: 8rem;
-   
+    margin-top: 2rem;
   }
 
   &__container {

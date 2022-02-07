@@ -1,11 +1,15 @@
 @use '../abstracts/' as *;
 
-.sm-screen-hidden{
-    display: none;
+
+
+.md-screen-hidden{
+    @include breakpoint(laptop){
+        display: none;
+    }
 }
 
 .lg-screen-hidden{
-    @include breakpoint(laptop){
+    @include breakpoint(desktop){
         display: none;
     }
 }

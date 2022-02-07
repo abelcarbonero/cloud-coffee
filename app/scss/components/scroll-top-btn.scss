@@ -9,10 +9,21 @@
   display: flex;
   
   z-index: 10;
-  transition: bottom 0.6s ease;
+  transition: bottom 0.6s;
   border-radius: 3px;
+  opacity: .8;
 
-  &.show-scroll {
+  &.show-top-btn {
     bottom: 2rem;
+
+    @include breakpoint(laptop){
+      bottom: 3rem;
+    }
+  }
+
+  @include breakpoint(laptop){
+    
+    right: 3rem;
+    padding: .7rem;
   }
 }

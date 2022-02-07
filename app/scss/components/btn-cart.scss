@@ -1,0 +1,12 @@
+@use "../abstracts/" as *;
+.btn-cart{
+    
+    & svg{
+        stroke: white;
+
+        @include breakpoint(laptop){
+            stroke: black;
+        }
+    }
+   
+}

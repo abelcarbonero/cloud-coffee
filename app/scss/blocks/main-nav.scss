@@ -2,7 +2,7 @@
 .main-nav {
   background-color: var(--color-500);
   color: var(--color-100);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -17,8 +17,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
+  
 
-  @include breakpoint(laptop){
+  @include breakpoint(laptop) {
     background-color: transparent;
     color: var(--color-500);
     position: initial;
@@ -37,15 +39,18 @@
     flex-direction: column;
     gap: var(--space-sm);
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       flex-direction: row;
-      justify-self: end;
-     
+      align-items: center;
     }
   }
 
   &__item {
     position: relative;
+
+    &--shop {
+      display: flex;
+    }
   }
 
   &__link {
@@ -58,10 +63,9 @@
 
     @include breakpoint(tablet) {
       font-size: var(--fs-lg);
-      
     }
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       font-size: var(--fs-sm);
       font-weight: 700;
       color: var(--color-500);
@@ -81,14 +85,13 @@
       opacity: 0;
       transition: opacity 0.3s;
 
-      @include breakpoint(laptop){
+      @include breakpoint(laptop) {
         top: initial;
         right: initial;
-        bottom: -.25rem;
+        bottom: -0.25rem;
         left: 50%;
         transform: translateX(-50%);
       }
-      
     }
 
     &.current:after {
