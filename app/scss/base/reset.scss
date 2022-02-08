@@ -20,7 +20,7 @@ dd {
   padding: 0;
 }
 
-h1,h2{
+h1,h2,h3{
   line-height: 1;
 }
 
@@ -63,6 +63,7 @@ button {
   background-color: transparent;
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 /* Make images easier to work with */

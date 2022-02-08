@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+.cart__footer{
+    margin-top: var(--space-lg);
+    text-transform: capitalize;
+
+    & h3{
+        margin-bottom: var(--space-sm);
+    }
+}

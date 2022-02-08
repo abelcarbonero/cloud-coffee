@@ -1,62 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="/dist/style.css" />
+    <!-- js link -->
+    <script defer src="./dist/script.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- google fonts  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <!-- css link -->
-  <link rel="stylesheet" href="/dist/style.css" />
-  <!-- js link -->
-  <script defer src="./dist/script.js"></script>
+    <title>Cloud Coffee | Coffee Shop & Bakery</title>
+  </head>
 
-  <title>Cloud Coffee | Coffee Shop & Bakery</title>
-</head>
-
-<body>
-  <header class="header" id="header">
-    <div class="top-bar" id="top-bar">
-      <!-- logo  -->
-      <a href="./index.html" class="flex">
-        <img class="top-bar__logo" src="./dist/images/logo.png" alt="CloudCoffee logo" />
-      </a>
-      <!-- main nav -->
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link current">Inicio</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#about" class="main-nav__link">Nosotros</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#contact" class="main-nav__link">Contacto</a>
-          </li>
-          <li class="main-nav__item main-nav__item--shop">
-            <a href="./shop.html" class="main-nav__link">Tienda</a>
-            <button class="btn-cart">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="36" height="36"
-                viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <polyline points="7 10 12 4 17 10" />
-                <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
-                <circle cx="12" cy="15" r="2" />
-              </svg>
-            </button>
-          </li>
-        </ul>
-        <!-- mobile social icons -->
-        <ul class="social__list  md-screen-hidden flex">
+  <body>
+    <header class="header" id="header">
+      <div class="top-bar" id="top-bar">
+        <!-- logo  -->
+        <a href="./index.html" class="flex">
+          <img
+            class="top-bar__logo"
+            src="./dist/images/logo.png"
+            alt="CloudCoffee logo"
+          />
+        </a>
+        <!-- main nav -->
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link current">Inicio</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#about" class="main-nav__link">Nosotros</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contact" class="main-nav__link">Contacto</a>
+            </li>
+            <li class="main-nav__item main-nav__item--shop">
+              <a href="./shop.html" class="main-nav__link">Tienda</a>
+              <button class="btn-cart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-basket"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="7 10 12 4 17 10" />
+                  <path
+                    d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z"
+                  />
+                  <circle cx="12" cy="15" r="2" />
+                </svg>
+                <div class="cart-items-icon">0</div>
+              </button>
+            </li>
+          </ul>
+          <!-- mobile social icons -->
+          <ul class="social__list md-screen-hidden flex">
             <li class="social__item">
               <a href="" class="social__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="36"
-                  height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <rect x="4" y="4" width="16" height="16" rx="4" />
                   <circle cx="12" cy="12" r="3" />
@@ -66,303 +93,425 @@
             </li>
             <li class="social__item">
               <a href="" class="socials__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36"
-                  height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-facebook"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  <path
+                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                  />
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="" class="socials__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="36"
-                  height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-twitter"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path
-                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                  />
                 </svg>
               </a>
             </li>
           </ul>
-       
-      </nav>
-      <!-- hamburger button  -->
-      <button class="menu-btn md-screen-hidden flex">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-  <main class="main">
-    <!-- HERO SECTION -->
-    <section class="hero section">
-      <div class="hero__header container">
-        <p class="span-line">No es solo café, es una experiencia.</p>
-        <h2 class="hero__title">
-          Coffee. <br />
-          Eat. <br />
-          Love.
-        </h2>
+        </nav>
+        <!-- hamburger button  -->
+        <button class="menu-btn md-screen-hidden flex">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <picture>
-        <source srcset="/dist/images/desktop/hero-desktop.jpg" media="(min-width: 600px)" />
-        <img class="hero__img" src="/dist/images/hero-mobile.jpg" alt="MDN" />
-      </picture>
-      <div class="hero__description container-narrow">
-        <p>
-          Disfruta de nuestra selección de cafés 100% arábica de distintas
-          procedencias, así como de una rica variedad de dulces caseros.
-        </p>
-        <p>
-          Recién hecho, recién molido, un lugar acogedor para los amantes del
-          café.
-        </p>
-      </div>
-    </section>
-    <div class="spot-icon"></div>
-    <!-- ABOUT SECTION -->
-    <section class="about section grid" id="about">
-
-      <div class="about__text flex container-narrow">
-        <h2 class="section-title  about__title">Sobre Nosotros</h2>
-        <h3 class="heading-2 about__subtitle">Coffee.Eat.Love.</h3>
-        <div class="about__description grid ">
-          <p>
-            En CloudCoffee creemos que las cosas más simples de la vida son
-            casi siempre las más bellas y las que merecen ser compartidas.
-            Hemos creado un espacio donde unir el diseño, el mejor café y a
-            las personas.
-          </p>
-          <p>
-            Un lugar en el que compartir nuestro amor por el
-            mejor café, la decoración hecha a mano y sabores que te harán
-            feliz. Por encima de todo hemos soñado con crear un espacio
-            lleno de amor donde te sientas como en casa.
-            <br>Bienvenido a CloudCafé.
-          </p>
-        </div>
-      </div>
-
-      <div class="about__images grid">
-
-        <picture>
-          <source srcset="/dist/images/desktop/about-img-desktop-1.jpg" media="(min-width: 600px)" />
-          <img class="about__img" src="/dist/images/about-img-mobile-1.jpg" alt="pastries" />
-        </picture>
-
-
-        <picture>
-          <source srcset="/dist/images/desktop/about-img-dektop-2.jpg" media="(min-width: 600px)" />
-          <img class="about__img" src="/dist/images/about-img-mobile-2.jpg" alt="pastries" />
-        </picture>
-
-      </div>
-      <a href="./team.html" class="about__btn btn">Nuestro equipo</a>
-    </section>
-    <!-- FOOD SECTION -->
-    <section class="section food grid article-container">
-      <!-- pastries article -->
-      <article class="article grid ">
-        <div class="column-1 reverse">
-          <h2 class="heading-1 article__title">Dulces</h2>
-          <p class="article__description">
-            Una selección de bollería artesanal elaborada con auténtica mantequilla
-            e ingredientes de primera calidad horneados cada día. Los favoritos son los croissants de almendra, el
-            pastel danés de temporada y nuestros croissants de jamón y queso.
-          </p>
-        </div>
-        <div class="column-2">
-          <picture>
-            <source srcset="/dist/images/desktop/pastries-desktop.jpg" media="(min-width: 600px)" />
-            <img class="article__img" src="/dist/images/pastries-mobile.jpg" alt="pastries" />
-          </picture>
-        </div>
-      </article>
-      <!-- lunch article -->
-      <article class="article grid">
-        <div class="column-1">
-          <h2 class="heading-1 article__title">Sandwiches</h2>
-          <p>Disponible diariamente.</p>
-          <p class="article__description">
-            Inspirados en los productos y carnes de la zona, nuestros sándwiches
-            son elaborados con pan de la casa que va rotando a lo largo de las temporadas. Las sopas y ensaladas se
-            ofrecen periódicamente como parte de un menú selecto.
-            Consulta nuestras redes sociales para ver la disponibilidad.
-          </p>
-        </div>
-        <div class="column-2">
-          <picture>
-            <source srcset="/dist/images/desktop/lunch-desktop.jpg" media="(min-width: 600px)" />
-            <img class="article__img" src="/dist/images/lunch-mobile.jpg" alt="lunch" />
-          </picture>
-        </div>
-      </article>
-      <!-- coffee article -->
-      <article class="article grid">
-        <div class="column-1 reverse">
-          <h2 class="heading-1 article__title">Nuestro Café</h2>
-          <p class="article__description">
-            Nuestros granos son cuidadosamente tostados y elaborados por Republica de Café
-            en Málaga, así que ya sea un Americano, un Capuchino o un
-            café con leche acompañado de uno de nuestros siropes caseros,
-            lo tenemos todo cubierto. Cafés con sabores de temporada, tés y zumos
-            también disponibles.
-          </p>
-        </div>
-        <div class="column-2">
-          <picture>
-            <source srcset="/dist/images/desktop/coffee-desktop.jpg" media="(min-width: 600px)" />
-            <img class="article__img" src="/dist/images/coffee-mobile.jpg" alt="coffee" />
-          </picture>
-        </div>
-      </article>
-      <!-- donuts article -->
-      <article class="article grid">
-        <div class="column-1">
-          <h2 class="heading-1 article__title">Date un capricho</h2>
-          <p class="article__descrpition">
-            Decidimos no quedarnos sólo con los croissants y los bollos.
-            Los deliciosos artículos del menú incluyen tortitas de azúcar con limón, galletas, rulos de canela y tarta
-            de queso, por nombrar algunos. No se pierda nuestro lineal de los sábados con una amplia gama de donuts
-            recién hechos.
-          </p>
-        </div>
-        <div class="column-2">
-          <picture>
-            <source srcset="/dist/images/desktop/pastries-mix-desktop.jpg" media="(min-width: 600px)" />
-            <img class="article__img" src="/dist/images/pastries-mix-mobile.jpg" alt="donuts" />
-          </picture>
-        </div>
-      </article>
-      <a href="./shop.html" class="food__btn btn">Visita nuestra tienda</a>
-    </section>
-
-
-  </main>
-  <!-- FOOTER  -->
-  <footer class="footer" id="contact">
-    <div class="footer__container container-narrow grid">
-      <!-- location -->
-      <div class="footer__info">
-        <div class="footer__section-title">
-          <h2 class="section-title section-title--white">
-            Te estamos esperando.
+    </header>
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero section">
+        <div class="hero__header container">
+          <p class="span-line">No es solo café, es una experiencia.</p>
+          <h2 class="hero__title">
+            Coffee. <br />
+            Eat. <br />
+            Love.
           </h2>
-          <h3 class="heading-2 heading-2--white">¿Vienes?</h3>
         </div>
-        <div class="footer__info__wrapper grid">
-          <div class="footer__location">
-            <h3 class="heading-2 heading-2--white">Dónde Estamos</h3>
+        <picture>
+          <source
+            srcset="/dist/images/desktop/hero-desktop.jpg"
+            media="(min-width: 600px)"
+          />
+          <img class="hero__img" src="/dist/images/hero-mobile.jpg" alt="MDN" />
+        </picture>
+        <div class="hero__description container-narrow">
+          <p>
+            Disfruta de nuestra selección de cafés 100% arábica de distintas
+            procedencias, así como de una rica variedad de dulces caseros.
+          </p>
+          <p>
+            Recién hecho, recién molido, un lugar acogedor para los amantes del
+            café.
+          </p>
+        </div>
+      </section>
+      <div class="spot-icon"></div>
+      <!-- ABOUT SECTION -->
+      <section class="about section grid" id="about">
+        <div class="about__text flex container-narrow">
+          <h2 class="section-title about__title">Sobre Nosotros</h2>
+          <h3 class="heading-2 about__subtitle">Coffee.Eat.Love.</h3>
+          <div class="about__description grid">
             <p>
-              Calle Juan Valdés 7 <br />
-              05567 Invent
+              En CloudCoffee creemos que las cosas más simples de la vida son
+              casi siempre las más bellas y las que merecen ser compartidas.
+              Hemos creado un espacio donde unir el diseño, el mejor café y a
+              las personas.
+            </p>
+            <p>
+              Un lugar en el que compartir nuestro amor por el mejor café, la
+              decoración hecha a mano y sabores que te harán feliz. Por encima
+              de todo hemos soñado con crear un espacio lleno de amor donde te
+              sientas como en casa.
+              <br />Bienvenido a CloudCafé.
             </p>
           </div>
-          <div class="footer__time">
-            <h3 class="heading-2 heading-2--white">Nuestro Horario</h3>
-            <p>Mártes a Sábado / 9:00am - 5:00pm</p>
+        </div>
+
+        <div class="about__images grid">
+          <picture>
+            <source
+              srcset="/dist/images/desktop/about-img-desktop-1.jpg"
+              media="(min-width: 600px)"
+            />
+            <img
+              class="about__img"
+              src="/dist/images/about-img-mobile-1.jpg"
+              alt="pastries"
+            />
+          </picture>
+
+          <picture>
+            <source
+              srcset="/dist/images/desktop/about-img-dektop-2.jpg"
+              media="(min-width: 600px)"
+            />
+            <img
+              class="about__img"
+              src="/dist/images/about-img-mobile-2.jpg"
+              alt="pastries"
+            />
+          </picture>
+        </div>
+        <a href="./team.html" class="about__btn btn">Nuestro equipo</a>
+      </section>
+      <!-- FOOD SECTION -->
+      <section class="section food grid article-container">
+        <!-- pastries article -->
+        <article class="article grid">
+          <div class="column-1 reverse">
+            <h2 class="heading-1 article__title">Dulces</h2>
+            <p class="article__description">
+              Una selección de bollería artesanal elaborada con auténtica
+              mantequilla e ingredientes de primera calidad horneados cada día.
+              Los favoritos son los croissants de almendra, el pastel danés de
+              temporada y nuestros croissants de jamón y queso.
+            </p>
+          </div>
+          <div class="column-2">
+            <picture>
+              <source
+                srcset="/dist/images/desktop/pastries-desktop.jpg"
+                media="(min-width: 600px)"
+              />
+              <img
+                class="article__img"
+                src="/dist/images/pastries-mobile.jpg"
+                alt="pastries"
+              />
+            </picture>
+          </div>
+        </article>
+        <!-- lunch article -->
+        <article class="article grid">
+          <div class="column-1">
+            <h2 class="heading-1 article__title">Sandwiches</h2>
+            <p>Disponible diariamente.</p>
+            <p class="article__description">
+              Inspirados en los productos y carnes de la zona, nuestros
+              sándwiches son elaborados con pan de la casa que va rotando a lo
+              largo de las temporadas. Las sopas y ensaladas se ofrecen
+              periódicamente como parte de un menú selecto. Consulta nuestras
+              redes sociales para ver la disponibilidad.
+            </p>
+          </div>
+          <div class="column-2">
+            <picture>
+              <source
+                srcset="/dist/images/desktop/lunch-desktop.jpg"
+                media="(min-width: 600px)"
+              />
+              <img
+                class="article__img"
+                src="/dist/images/lunch-mobile.jpg"
+                alt="lunch"
+              />
+            </picture>
+          </div>
+        </article>
+        <!-- coffee article -->
+        <article class="article grid">
+          <div class="column-1 reverse">
+            <h2 class="heading-1 article__title">Nuestro Café</h2>
+            <p class="article__description">
+              Nuestros granos son cuidadosamente tostados y elaborados por
+              Republica de Café en Málaga, así que ya sea un Americano, un
+              Capuchino o un café con leche acompañado de uno de nuestros
+              siropes caseros, lo tenemos todo cubierto. Cafés con sabores de
+              temporada, tés y zumos también disponibles.
+            </p>
+          </div>
+          <div class="column-2">
+            <picture>
+              <source
+                srcset="/dist/images/desktop/coffee-desktop.jpg"
+                media="(min-width: 600px)"
+              />
+              <img
+                class="article__img"
+                src="/dist/images/coffee-mobile.jpg"
+                alt="coffee"
+              />
+            </picture>
+          </div>
+        </article>
+        <!-- donuts article -->
+        <article class="article grid">
+          <div class="column-1">
+            <h2 class="heading-1 article__title">Date un capricho</h2>
+            <p class="article__descrpition">
+              Decidimos no quedarnos sólo con los croissants y los bollos. Los
+              deliciosos artículos del menú incluyen tortitas de azúcar con
+              limón, galletas, rulos de canela y tarta de queso, por nombrar
+              algunos. No se pierda nuestro lineal de los sábados con una amplia
+              gama de donuts recién hechos.
+            </p>
+          </div>
+          <div class="column-2">
+            <picture>
+              <source
+                srcset="/dist/images/desktop/pastries-mix-desktop.jpg"
+                media="(min-width: 600px)"
+              />
+              <img
+                class="article__img"
+                src="/dist/images/pastries-mix-mobile.jpg"
+                alt="donuts"
+              />
+            </picture>
+          </div>
+        </article>
+        <a href="./shop.html" class="food__btn btn">Visita nuestra tienda</a>
+      </section>
+    </main>
+    <!-- FOOTER  -->
+    <footer class="footer" id="contact">
+      <div class="footer__container container-narrow grid">
+        <!-- location -->
+        <div class="footer__info">
+          <div class="footer__section-title">
+            <h2 class="section-title section-title--white">
+              Te estamos esperando.
+            </h2>
+            <h3 class="heading-2 heading-2--white">¿Vienes?</h3>
+          </div>
+          <div class="footer__info__wrapper grid">
+            <div class="footer__location">
+              <h3 class="heading-2 heading-2--white">Dónde Estamos</h3>
+              <p>
+                Calle Juan Valdés 7 <br />
+                05567 Invent
+              </p>
+            </div>
+            <div class="footer__time">
+              <h3 class="heading-2 heading-2--white">Nuestro Horario</h3>
+              <p>Mártes a Sábado / 9:00am - 5:00pm</p>
+            </div>
+          </div>
+        </div>
+        <!-- contact -->
+        <div class="footer__contact">
+          <h2 class="section-title section-title--white footer__section-title">
+            Contacto
+          </h2>
+          <div class="footer__contact__container grid">
+            <div class="footer__contact__wrapper">
+              <p>Teléfono: +34 952 00 00 00</p>
+              <p>
+                Mándanos un mensaje vía email, mediante nuestro formulario o
+                síguenos en redes sociales. Estaremos encantados de saber de ti.
+              </p>
+              <p>
+                Email :
+                <a href="mailto:cloudcoffee@gmail.com">cloudcoffee@gmail.com</a>
+              </p>
+            </div>
+            <!-- contact form -->
+            <div class="form__container">
+              <form class="form">
+                <div class="form__container">
+                  <div class="form__group">
+                    <label class="form__label" for="name">Nombre *</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="email">Email *</label>
+                    <input
+                      class="form__input"
+                      type="email"
+                      name="email"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="phone">Teléfono</label>
+                    <input
+                      class="form__input"
+                      type="phone"
+                      name="phone"
+                      id="name"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <textarea
+                      class="form__textarea"
+                      name="message"
+                      id="message"
+                      placeholder="Deja tu mensaje..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <button class="form__btn btn btn--white btn--submit">
+                  Enviar
+                </button>
+              </form>
+            </div>
+
+            <div class="footer__socials socials">
+              <ul class="socials__list flex footer__list">
+                <li class="socials__item">
+                  <a href="" class="socials__link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-instagram"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.0"
+                      stroke="#ffffff"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <rect x="4" y="4" width="16" height="16" rx="4" />
+                      <circle cx="12" cy="12" r="3" />
+                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-facebook"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.0"
+                      stroke="#ffffff"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-twitter"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.0"
+                      stroke="#ffffff"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <!-- contact -->
-      <div class="footer__contact">
-        <h2 class="section-title section-title--white footer__section-title">Contacto</h2>
-        <div class="footer__contact__container grid">
-          <div class="footer__contact__wrapper">
-            <p>Teléfono: +34 952 00 00 00</p>
-            <p>
-              Mándanos un mensaje vía email, mediante nuestro formulario o síguenos en redes sociales. Estaremos
-              encantados de saber de ti.
-            </p>
-            <p>
-              Email :
-              <a href="mailto:cloudcoffee@gmail.com">cloudcoffee@gmail.com</a>
-            </p>
-          </div>
-          <!-- contact form -->
-          <div class="form__container">
-            <form class="form">
-              <div class="form__container">
-                <div class="form__group">
-                  <label class="form__label" for="name">Nombre *</label>
-                  <input class="form__input" type="text" name="name" id="name" required />
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="email">Email *</label>
-                  <input class="form__input" type="email" name="email" id="name" required />
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="phone">Teléfono</label>
-                  <input class="form__input" type="phone" name="phone" id="name" />
-                </div>
-                <div class="form__group">
-                  <textarea class="form__textarea" name="message" id="message" placeholder="Deja tu mensaje..."
-                    required></textarea>
-                </div>
-              </div>
-              <button class="form__btn btn btn--white btn--submit">Enviar</button>
-            </form>
-          </div>
 
-          <div class="footer__socials socials">
-            <ul class="socials__list flex footer__list">
-              <li class="socials__item">
-                <a href="" class="socials__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
-                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.0" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <rect x="4" y="4" width="16" height="16" rx="4" />
-                    <circle cx="12" cy="12" r="3" />
-                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="" class="socials__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1.0" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="" class="socials__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1.0" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                      d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-    </div>
-    <p class="footer__author">CloudCafé Project 2022 - Made with...you know...by Abel Carbonero </p>
-  </footer>
-  <!-- scroll up -->
-  <a href="#" class="scroll-top lg-screen-hidden" aria-label="Scroll-Up">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-      <path fill="none" d="M0 0h24v24H0z" />
-      <title>Scroll to Top</title>
-      <path class="scroll-up-icon" d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" />
-    </svg>
-  </a>
-</body>
-
+      <p class="footer__author">
+        CloudCafé Project 2022 - Made with...you know...by Abel Carbonero
+      </p>
+    </footer>
+    <!-- scroll up -->
+    <a href="#" class="scroll-top lg-screen-hidden" aria-label="Scroll-Up">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path fill="none" d="M0 0h24v24H0z" />
+        <title>Scroll to Top</title>
+        <path
+          class="scroll-up-icon"
+          d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"
+        />
+      </svg>
+    </a>
+  </body>
 </html>

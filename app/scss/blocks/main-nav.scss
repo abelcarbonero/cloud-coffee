@@ -39,9 +39,14 @@
     flex-direction: column;
     gap: var(--space-sm);
 
+    @include breakpoint(tablet){
+      gap: var(--space-md);
+    }
+
     @include breakpoint(laptop) {
       flex-direction: row;
       align-items: center;
+
     }
   }
 
@@ -62,7 +67,7 @@
     color: var(--color-100);
 
     @include breakpoint(tablet) {
-      font-size: var(--fs-lg);
+      font-size: var(--fs-md);
     }
 
     @include breakpoint(laptop) {
