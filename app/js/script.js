@@ -11,6 +11,8 @@ const showMenu = () => {
 };
 
 document.addEventListener("click", (e) => {
+  console.log(e.target);
+  
   if (e.target.matches(".menu-btn")) {
     showMenu();
   }
@@ -19,6 +21,19 @@ document.addEventListener("click", (e) => {
     mainNav.classList.remove("active");
     hamburgerBtn.classList.remove("active");
     body.classList.remove("no-scroll");
+  }
+
+  if (e.target.matches(".cart__close-btn")) {
+    menuCart.classList.remove("show-cart");
+    menuCart.classList.remove("show-overlay");
+  }
+
+  if (
+    e.target.matches(".btn-cart") ||
+    e.target.matches(".product__add-btn")
+  ) {
+    menuCart.classList.add("show-cart");
+    menuCart.classList.add("show-overlay");
   }
 });
 
@@ -165,7 +180,7 @@ const setCart = (object) => {
 };
 
 const renderCart = () => {
-  localStorage.setItem('cart', JSON.stringify(cart))
+  localStorage.setItem("cart", JSON.stringify(cart));
   cartItems.innerHTML = "";
   //console.log(cart);
   Object.values(cart).forEach((cartProduct) => {
@@ -215,6 +230,9 @@ const renderFooter = () => {
   );
   //console.log(totalQuantity)
   //console.log(totalPrice)
+  if(totalQuantity>0){
+    document.querySelector('.cart-items-icon').textContent = totalQuantity
+  }
 
   templateCartFooter.querySelector(".cart__footer-quantity").textContent =
     totalQuantity;
@@ -262,5 +280,6 @@ const btnAction = (e) => {
     renderCart();
   }
   
+
   e.stopPropagation();
 };
