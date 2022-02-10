@@ -64,6 +64,10 @@ button {
   cursor: pointer;
   border: none;
   padding: 0;
+
+  & svg{
+    pointer-events: none;
+  }
 }
 
 /* Make images easier to work with */
