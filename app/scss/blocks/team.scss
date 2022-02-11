@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .team {
-   
   &__header {
     display: flex;
     flex-direction: column;
@@ -15,7 +14,10 @@
 
     @include breakpoint(laptop) {
       margin-top: var(--space-xl);
-     
+    }
+
+    @include breakpoint(desktop) {
+      margin-top: 9rem;
     }
   }
 
@@ -25,13 +27,12 @@
 
     @include breakpoint(tablet) {
       margin-top: var(--space-xxl);
-      
     }
 
     @include breakpoint(laptop) {
-        margin-top: 7rem;
-        gap: 9rem;
-      }
+      margin-top: 7rem;
+      gap: 9rem;
+    }
   }
 
   &__member {
@@ -61,11 +62,11 @@
   }
 }
 
-.btn__home{
+.btn__home {
   justify-self: center;
   text-align: center;
 
-  @include breakpoint(laptop){
-      margin-block: 2rem;
+  @include breakpoint(laptop) {
+    margin-block: 2rem;
   }
 }

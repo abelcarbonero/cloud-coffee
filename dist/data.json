@@ -6,7 +6,7 @@
     "price": 4.95,
     "instock": 30,
     "description":
-      "Si eres un/a amante de los cafés suaves y cremosos, este es tu café. Es delicado y envolvente en el paladar y sus notas a cacao y matices afrutados lo hacen inconfundible.",
+      "Si eres un/a amante de los cafés suaves y cremosos, este es tu café. Delicado y envolvente en el paladar, con notas a cacao y matices afrutados.",
     "imgSrc": "./dist/images/coffee-bag-1.jpg"
   },
   {
@@ -16,7 +16,7 @@
     "price": 6.95,
     "instock": 43,
     "description":
-      "Es un Café de Especialidad que destaca por su dulzura, con notas vibrantes a caramelo y cacao en boca, y con una acidez remarcable que permite descubrir toques enzimáticos como el de la fresa en su potente cuerpo.",
+      "Es un Café de Especialidad que destaca por su dulzura, con notas vibrantes a caramelo y cacao en boca.",
     "imgSrc": "./dist/images/coffee-bag-2.jpg"
   },
   {
@@ -26,7 +26,7 @@
     "price": 4.95,
     "instock": 10,
     "description":
-      "Este café es una mezcla de varidades typica, bourbon, caturra y catuí. Tiene doble certificación, orgánico y Fairtrade. Reconocerás este café por sus aromas de cacaos y por sus notas a almendra y caramelo que lo hacen irresistible.",
+      "Mezcla de varidades typica, bourbon, caturra y catuí. Reconocible por sus aromas de cacaos y por sus notas a almendra y caramelo.",
     "imgSrc": "./dist/images/coffee-bag-3.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "price": 6.95,
     "instock": 15,
     "description":
-      "El Café de Especialidad de Etiopía te cautivará por su autenticidad y naturalidad, con un cuerpo aterciopelado y una acidez cítrica viva y agradable.",
+      "Te cautivará por su autenticidad y naturalidad, con un cuerpo aterciopelado y una acidez cítrica viva y agradable.",
     "imgSrc": "./dist/images/coffee-bag-4.jpg"
   },
   {
@@ -46,7 +46,7 @@
     "price": 7.25,
     "instock": 4,
     "description":
-      "Disfruta de nuestro Kenia Kiatiney Beans, uno de los cafés de especialidad de África más valorados. Su completo sabor en boca, notable acidez cítrica y riqueza de matices te cautivará.",
+      "Uno de los cafés de especialidad de África más valorados. Su completo sabor en boca, notable acidez cítrica y riqueza de matices te cautivará.",
     "imgSrc": "./dist/images/coffee-bag-5.jpg"
   },
   {
@@ -56,7 +56,7 @@
     "price": 5.85,
     "instock": 20,
     "description":
-      "El Café de Especialidad Panamá ‘Casa San Juan’  destaca por su excelente fragancia y afrutados matices, con notas a frutas del bosque, cereza y toques achocolatados.",
+      "Este café destaca por su excelente fragancia y afrutados matices, con notas a frutas del bosque, cereza y toques achocolatados.",
     "imgSrc": "./dist/images/coffee-bag-6.jpg"
   }
 ]

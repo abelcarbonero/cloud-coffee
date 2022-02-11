@@ -16,8 +16,9 @@
     position: relative;
 
     @include breakpoint(laptop) {
-      column-gap: 4rem;
-      margin-top: 3rem;
+      gap: 4rem;
+
+      padding: 6rem 0;
     }
   }
 }
@@ -78,8 +79,13 @@
 
   &__info {
     margin-top: var(--space-sm);
+    display: grid;
 
-    & h4{
+    @include breakpoint(tablet) {
+      grid-template-rows: auto 125px auto;
+    }
+
+    & h4 {
       color: var(--color-accent);
     }
   }
@@ -94,8 +100,6 @@
     margin-top: var(--space-xs);
     margin-bottom: var(--space-xs);
   }
-
-  
 
   &__price {
     font-size: var(--fs-md);
