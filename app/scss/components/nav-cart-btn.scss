@@ -1,9 +1,14 @@
 @use "../abstracts/" as *;
-.btn-cart {
+.cart-btn {
   position: relative;
   cursor: pointer;
 
+  @include breakpoint(laptop){
+    margin-bottom: 6px;
+  }
+
   & svg {
+    position: relative;
     pointer-events: none;
     stroke: white;
 
@@ -13,16 +18,13 @@
   }
 }
 
-.cart-items-icon {
-  position: absolute;
-  top: -4px;
-  right: -4px;
+.cart-btn-quantity {
   background-color: var(--color-accent);
-  padding: 0 4px;
   border-radius: 40%;
   color: var(--color-100);
-
-  @include breakpoint(laptop) {
-    top: -5px;
-  }
+  padding: 0px 4px;
+  position: absolute;
+  right: -7px;
+  top: -2px;
+  font-size: 14px;
 }
