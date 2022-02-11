@@ -12,6 +12,11 @@
   transition: bottom 0.6s;
   border-radius: 3px;
   opacity: .8;
+  transition: opacity .3s;
+
+  &:hover{
+    opacity: 1;
+  }
 
   &.show-top-btn {
     bottom: 2rem;

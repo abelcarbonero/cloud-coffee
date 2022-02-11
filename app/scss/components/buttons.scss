@@ -3,33 +3,34 @@
 .btn {
   display: inline-block;
   text-transform: uppercase;
-  
+
   background-color: var(--color-accent);
   letter-spacing: 1px;
   font-weight: var(--fw-700);
   padding: 0.8rem;
   // border-radius: 4px;
   font-size: 14px;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
   color: var(--color-100);
 
-  @include breakpoint(tablet) {
-    font-size: var(--fs-sm);
+  &:hover {
+    background-color: var(--color-hover);
   }
 
   @include breakpoint(laptop) {
-    padding: 1.4rem 1.8rem;
-    
+    &--xl {
+      padding: 1.25rem 1.75rem;
+      font-size: var(--fs-sm);
+    }
   }
 
+  &--white {
+    border: 1px solid white;
+    color: var(--color-100);
+    background-color: var(--color-600);
 
-  &--white{
-      border: 1px solid white;
-      color: var(--color-100);
-      background-color: var(--color-600);
-
-      @include breakpoint(laptop){
-          padding: .5rem;
-      }
+    @include breakpoint(laptop) {
+      padding: 0.5rem;
+    }
   }
 }
