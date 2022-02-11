@@ -64,7 +64,6 @@
                 <span class="cart-btn-quantity">0</span>
               </button>
             </li>
-
           </ul>
           <!-- mobile social icons -->
           <ul class="main-nav__social-list md-screen-hidden flex">
@@ -194,90 +193,88 @@
       </section>
     </main>
     <!-- cart -->
-
-    <div class="cart">
-      <button class="cart__close-btn">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-square-x"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#000000"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <rect x="4" y="4" width="16" height="16" rx="2" />
-          <path d="M10 10l4 4m0 -4l-4 4" />
-        </svg>
-      </button>
-      <h2 class="heading-1 cart__title">Tu cesta</h2>
-      <div class="cart__items" id="cart__items">
-        <!-- cart item -->
-        <template id="template-cart__item">
-          <div class="cart__item grid">
-            <img
-              src="./dist/images/coffee-bag-1.jpg"
-              alt=""
-              class="cart__item-img"
-            />
-            <div class="cart__item-info">
-              <h3 class="cart__item-title">Coffee Blend</h3>
-              <h4><span class="cart__item-price">8.99</span>€</h4>
-              <button class="cart__item-remove-btn">Eliminar</button>
+      <div class="cart">
+        <button class="cart__close-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-square-x"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M10 10l4 4m0 -4l-4 4" />
+          </svg>
+        </button>
+        <h2 class="heading-1 cart__title">Tu cesta</h2>
+        <div class="cart__items" id="cart__items">
+          <!-- cart item -->
+          <template id="template-cart__item">
+            <div class="cart__item grid">
+              <img
+                src="./dist/images/coffee-bag-1.jpg"
+                alt=""
+                class="cart__item-img"
+              />
+              <div class="cart__item-info">
+                <h3 class="cart__item-title">Coffee Blend</h3>
+                <h4><span class="cart__item-price">8.99</span>€</h4>
+                <button class="cart__item-remove-btn">Eliminar</button>
+              </div>
+              <div class="cart__item-quantity-content">
+                <button class="cart__item-plus-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-chevron-up"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#000000"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 15 12 9 18 15" />
+                  </svg>
+                </button>
+                <span class="cart__item-quantity">1</span>
+                <button class="cart__item-minus-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-chevron-down"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#000000"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="cart__item-quantity-content">
-              <button class="cart__item-plus-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-chevron-up"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#000000"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <polyline points="6 15 12 9 18 15" />
-                </svg>
-              </button>
-              <span class="cart__item-quantity">1</span>
-              <button class="cart__item-minus-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-chevron-down"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#000000"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </template>
-        <!-- end of cart item -->
+          </template>
+          <!-- end of cart item -->
+        </div>
+        <!-- cart footer -->
+        <div class="cart__footer" id="cart__footer">
+          <p>Cesta vacía, comience a comprar</p>
+        </div>
       </div>
-      <!-- cart footer -->
-      <div class="cart__footer" id="cart__footer">
-        <p>Cesta vacía, comience a comprar</p>
-      </div>
-    </div>
-
-    <!-- end of cart footer -->
-
+    
+    <!-- end of cart-->
     <!-- cart footer template -->
     <template id="template-cart__footer">
       <h3>
@@ -286,7 +283,7 @@
       </h3>
       <h3>Total : <span class="cart__footer-price">0</span>€</h3>
       <button class="cart__footer-clear-btn btn">Vaciar cesta</button>
-    </template> 
+    </template>
     <!-- end of cart footer template -->
 
     <!-- FOOTER  -->
@@ -451,9 +448,7 @@
         </div>
       </div>
 
-      <p class="footer__author">
-        CloudCafé Project 2022 - by Abel Carbonero
-      </p>
+      <p class="footer__author">CloudCafé Project 2022 - by Abel Carbonero</p>
     </footer>
     <!-- scroll up -->
     <a href="#" class="scroll-top lg-screen-hidden" aria-label="Scroll-Up">
