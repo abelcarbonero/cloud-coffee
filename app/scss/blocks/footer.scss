@@ -87,14 +87,9 @@
     gap: 1.5rem;
     padding: 0;
 
-    svg{
-      width: 28px;
-      height: 28px;
-
-      @include breakpoint(tablet){
-        width: 36px;
-        height: 36px;
-      }
+    svg {
+      width: 36px;
+      height: 36px;
     }
   }
 
