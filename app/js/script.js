@@ -26,12 +26,10 @@ document.addEventListener("click", (e) => {
   //* SHOW - CLOSE CART MENU
   if (e.target.matches(".cart__close-btn")) {
     menuCart.classList.remove("show-cart");
-    menuCart.classList.remove("show-overlay");
   }
 
-  if (e.target.matches(".cart-btn") || e.target.matches(".product__add-btn")) {
+  if (e.target.matches(".cart-btn")) {
     menuCart.classList.add("show-cart");
-    menuCart.classList.add("show-overlay");
   }
 });
 
@@ -146,6 +144,7 @@ const renderProducts = (data) => {
 
 //Add event in every single product, after renderProducts()
 productItems.addEventListener("click", (e) => {
+  
   addItemToCart(e);
 });
 
@@ -153,6 +152,9 @@ const addItemToCart = (e) => {
   //console.log(e.target)
   if (e.target.matches(".product__add-btn")) {
     //console.log(e.target.parentElement.parentElement)
+    //*show cart menu
+    menuCart.classList.add("show-cart");
+
     setCart(e.target.parentElement.parentElement);
   }
   e.stopPropagation();
@@ -228,12 +230,11 @@ const renderFooter = () => {
   );
   //console.log(totalQuantity)
   //console.log(totalPrice)
-  
 
   templateCartFooter.querySelector(".cart__footer-quantity").textContent =
     totalQuantity;
   templateCartFooter.querySelector(".cart__footer-price").textContent =
-    totalPrice;
+   ( Math.round((totalPrice + Number.EPSILON) * 100) / 100).toFixed(2);
 
   const clone = templateCartFooter.cloneNode(true);
   fragment.appendChild(clone);

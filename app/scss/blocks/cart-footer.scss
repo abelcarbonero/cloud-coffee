@@ -1,8 +1,12 @@
 @use '../abstracts/' as *;
 .cart__footer{
-    margin-top: var(--space-lg);
+    margin-top: var(--space-xl);
     
     & h3{
         margin-bottom: var(--space-sm);
+    }
+
+    &-clear-btn{
+        margin-top: var(--space-lg);
     }
 }

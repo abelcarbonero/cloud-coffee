@@ -41,7 +41,7 @@
       padding-top: 0.5rem;
     }
 
-    & a{
+    & a {
       color: white;
     }
   }
@@ -55,25 +55,21 @@
   }
 
   &__contact__container {
-   
     position: relative;
     @include breakpoint(laptop) {
       grid-template-columns: repeat(2, 1fr);
       gap: 4rem;
-      
     }
   }
-  
-  
+
   &__socials {
-   
     margin-top: var(--space-xl);
 
-    @include breakpoint(tablet){
+    @include breakpoint(tablet) {
       padding-block: 2rem;
     }
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       position: absolute;
       bottom: 10.5rem;
     }
@@ -88,16 +84,27 @@
 
   &__list {
     justify-content: center;
+    gap: 1.5rem;
     padding: 0;
+
+    svg{
+      width: 28px;
+      height: 28px;
+
+      @include breakpoint(tablet){
+        width: 36px;
+        height: 36px;
+      }
+    }
   }
 
-  &__author{
+  &__author {
     text-align: center;
     margin-top: 2rem;
     font-size: 10px;
     letter-spacing: 1px;
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       margin-top: 4rem;
     }
   }

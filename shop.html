@@ -29,16 +29,16 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link current">Inicio</a>
+              <a href="./index.html" class="main-nav__link ">Inicio</a>
             </li>
             <li class="main-nav__item">
-              <a href="#about" class="main-nav__link">Nosotros</a>
+              <a href="./index.html#about" class="main-nav__link">Nosotros</a>
             </li>
             <li class="main-nav__item">
               <a href="#contact" class="main-nav__link">Contacto</a>
             </li>
             <li class="main-nav__item">
-              <a href="./shop.html" class="main-nav__link">Tienda</a>
+              <a href="./shop.html" class="main-nav__link current">Tienda</a>
             </li>
             <li class="main-nav__item">
               <button class="cart-btn">
@@ -214,7 +214,7 @@
         </svg>
       </button>
       <h2 class="heading-1 cart__title">Tu cesta</h2>
-      <div id="cart__items">
+      <div class="cart__items" id="cart__items">
         <!-- cart item -->
         <template id="template-cart__item">
           <div class="cart__item grid">
@@ -246,7 +246,7 @@
                   <polyline points="6 15 12 9 18 15" />
                 </svg>
               </button>
-              <p class="cart__item-quantity">1</p>
+              <span class="cart__item-quantity">1</span>
               <button class="cart__item-minus-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -6,7 +6,7 @@
     margin-top: 5rem;
   }
 
-  @include breakpoint(desktop){
+  @include breakpoint(desktop) {
     margin-top: 11rem;
   }
 
@@ -63,7 +63,6 @@
     transform: translateX(100%);
     transition: transform 0.6s;
 
-    & svg,
     & span {
       pointer-events: none;
     }
@@ -79,18 +78,26 @@
 
   &__info {
     margin-top: var(--space-sm);
+
+    & h4{
+      color: var(--color-accent);
+    }
   }
 
   &__name {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-md);
+    margin-top: var(--space-xs);
   }
 
   &__description {
     color: var(--color-300);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-xs);
   }
 
+  
+
   &__price {
-    font-size: var(--fs-sm);
-    margin-top: var(--space-xs);
+    font-size: var(--fs-md);
   }
 }

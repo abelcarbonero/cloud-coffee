@@ -94,6 +94,8 @@
       }
     }
 
+   
+
     &.current:after {
       opacity: 1 !important;
     }
@@ -108,4 +110,10 @@
     visibility: visible;
     transform: translateY(0);
   }
+
+ 
+}
+
+.main-nav__social-list{
+  gap: 3rem;
 }
