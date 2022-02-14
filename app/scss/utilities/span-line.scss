@@ -4,10 +4,8 @@
     max-width: 21ch;
     line-height: 1.2;
     font-weight: var(--fw-300);
+    font-size: var(--fs-sm);
 
-    @include breakpoint(tablet) {
-      font-size: var(--fs-sm);
-    }
 
     @include breakpoint(laptop) {
       grid-column: 2 / 3;

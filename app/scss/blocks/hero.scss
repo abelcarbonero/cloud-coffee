@@ -3,33 +3,31 @@
 .hero {
   width: 100%;
   position: relative;
-  
-  
-&__header {
+  @include breakpoint(laptop){
+    margin-top: 3rem;
+  }
+  @include breakpoint(desktop){
+    margin-top: 10rem;
+  }
+
+  &__header {
     position: relative;
 
     @include breakpoint(laptop) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin-top: 4rem;
     }
 
-    @include breakpoint(desktop){
-      margin-top: 11rem;
-    }
-
-    & p{
-      @include breakpoint(laptop){
+    & p {
+      @include breakpoint(laptop) {
         margin-bottom: 1.25rem;
       }
     }
   }
 
-  
-
   &__title {
     position: absolute;
-    top: 4rem;
+    top: 4.5rem;
     font-size: var(--fs-xxl);
     text-transform: uppercase;
     font-weight: var(--fw-700);
@@ -42,22 +40,20 @@
     }
 
     @include breakpoint(laptop) {
-      top: -.6rem;
+      top: -0.6rem;
       left: 5rem;
       font-size: 7rem;
     }
 
     @include breakpoint(desktop) {
       font-size: 8.75rem;
-      top: -.9rem;
+      top: -0.9rem;
     }
   }
 
-  
-
   &__img {
     margin-top: var(--space-xl);
-    aspect-ratio:16/9;
+    aspect-ratio: 16/9;
     object-fit: cover;
 
     @include breakpoint(tablet) {
@@ -71,16 +67,13 @@
     padding-top: var(--space-xl);
 
     @include breakpoint(tablet) {
-     text-align: center;
-     font-size: var(--fs-md);
-     padding-top: var(--space-xxl);
+      text-align: center;
+      font-size: var(--fs-md);
+      padding-top: var(--space-xxl);
     }
 
     @include breakpoint(laptop) {
-     
       padding-top: 7rem;
-     }
-}
-
-  
+    }
+  }
 }

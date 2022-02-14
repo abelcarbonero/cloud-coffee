@@ -1,13 +1,27 @@
 @use "../abstracts/" as *;
 .products {
-  margin-top: var(--space-lg);
-
-  @include breakpoint(laptop) {
-    margin-top: 5rem;
+  @include breakpoint(laptop){
+    margin-top: 3rem;
   }
+  @include breakpoint(desktop){
+    margin-top: 10rem;
+  }
+
+  
 
   @include breakpoint(desktop) {
     margin-top: 11rem;
+  }
+
+  &__header{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+
+    @include breakpoint(laptop){
+      flex-direction: row;
+      gap: 3rem;
+    }
   }
 
   &__container {

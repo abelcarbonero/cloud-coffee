@@ -99,6 +99,7 @@ const templateCartFooter = document.getElementById(
 ).content;
 const fragment = document.createDocumentFragment();
 let cart = {};
+const cartQuantityIcon = document.querySelector('.cart-btn-quantity')
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchData();
@@ -230,6 +231,7 @@ const renderFooter = () => {
   );
   //console.log(totalQuantity)
   //console.log(totalPrice)
+  cartQuantityIcon.textContent = totalQuantity;
 
   templateCartFooter.querySelector(".cart__footer-quantity").textContent =
     totalQuantity;
@@ -244,6 +246,7 @@ const renderFooter = () => {
   const clearCartBtn = document.querySelector(".cart__footer-clear-btn");
   clearCartBtn.addEventListener("click", () => {
     cart = {};
+    cartQuantityIcon.textContent = '0'
     renderCart();
   });
 };

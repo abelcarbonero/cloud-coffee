@@ -1,6 +1,8 @@
 @use "../abstracts/" as *;
 
 .team {
+
+ 
   &__header {
     display: flex;
     flex-direction: column;
@@ -11,13 +13,11 @@
       justify-content: flex-end;
       gap: var(--space-lg);
     }
-
-    @include breakpoint(laptop) {
-      margin-top: var(--space-xl);
+    @include breakpoint(laptop){
+      margin-top: 3rem;
     }
-
-    @include breakpoint(desktop) {
-      margin-top: 9rem;
+    @include breakpoint(desktop){
+      margin-top: 10rem;
     }
   }
 

@@ -17,6 +17,10 @@
     background-color: var(--color-hover);
   }
 
+  @include breakpoint(tablet){
+    padding: 1rem 1.2rem;
+  }
+
   @include breakpoint(laptop) {
     &--xl {
       padding: 1.25rem 1.75rem;

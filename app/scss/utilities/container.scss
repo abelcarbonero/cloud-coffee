@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 .container{
     padding: 0 1.5rem;
-    margin-inline: auto;
+    margin: 0 auto;
     max-width: 1200px;
 
     @include breakpoint(tablet){
@@ -10,7 +10,7 @@
 }
 
 .container-narrow{
-    margin-inline: auto;
+    margin: 0 auto;
     max-width: 37rem;
     padding-inline: 1.5rem;
 
@@ -21,7 +21,7 @@
 }
 
 .container-md{
-    margin-inline: auto;
+    margin: 0 auto;
     max-width: 60rem;
     padding-inline: 1.5rem;
 
