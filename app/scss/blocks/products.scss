@@ -1,5 +1,8 @@
 @use "../abstracts/" as *;
+
 .products {
+  margin-bottom: 3rem;
+  
   @include breakpoint(laptop){
     margin-top: 3rem;
   }
