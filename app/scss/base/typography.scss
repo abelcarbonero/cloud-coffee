@@ -47,7 +47,6 @@
     @include breakpoint(tablet) {
       font-size: var(--fs-lg);
     }
-
   }
 
   &-2 {
@@ -65,6 +64,6 @@
 }
 
 //Bold
-.bold{
+.bold {
   font-weight: var(--fw-700);
 }
