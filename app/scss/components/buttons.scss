@@ -2,8 +2,9 @@
 
 .btn {
   display: inline-block;
+  width: fit-content;
   text-transform: uppercase;
-
+  text-align: center;
   background-color: var(--color-accent);
   letter-spacing: 1px;
   font-weight: var(--fw-700);
@@ -24,7 +25,7 @@
   @include breakpoint(laptop) {
     &--xl {
       padding: 1.25rem 1.75rem;
-      font-size: var(--fs-sm);
+      font-size: var(--fs-xs);
     }
   }
 

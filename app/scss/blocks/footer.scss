@@ -1,21 +1,13 @@
 @use "../abstracts/" as *;
 
 .footer {
+  margin-top: 5rem;
   padding-top: 5rem;
   padding-bottom: 1.5rem;
   color: var(--color-100);
   background-color: var(--color-600);
 
-  @include breakpoint(tablet) {
-    padding-top: 6rem;
-  }
-
-  @include breakpoint(laptop) {
-    padding-top: 8rem;
-    margin-top: 2rem;
-  }
-
-  &__container {
+ &__container {
     gap: 5rem;
 
     @include breakpoint(laptop) {

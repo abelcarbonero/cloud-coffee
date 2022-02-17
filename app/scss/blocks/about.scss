@@ -56,16 +56,17 @@
 
 
   &__btn {
-    margin-top: 4.5rem;
-    justify-self: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 
     @include breakpoint(tablet){
-      margin-top: var(--space-xxl);
+     
+  margin-top: 3rem;
     }
 
     @include breakpoint(laptop){
-      margin-top: 9rem;
-      margin-bottom: 4rem;
+     align-self: center;
+     margin-top: 5rem;
     }
   }
 }

@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.specialty {
+  &__btn {
+    margin-top: var(--space-lg);
+
+    @include breakpoint(tablet){
+        margin-top: 0;
+    }
+  }
+
+  &__heading{
+      @include breakpoint(tablet){
+          display: flex;
+          align-items: flex-start;
+          gap: 3rem;
+      }
+      @include breakpoint(tablet){
+          gap: 7rem;
+      }
+  }
+
+  &__title{
+      max-width: 420px;
+  }
+
+  &__container {
+    margin-top: var(--space-xl);
+    row-gap: 3rem;
+    grid-template-columns: 300px;
+    justify-content: center;
+
+    @include breakpoint(laptop){
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        column-gap: 3rem;
+    }
+}
+
+  &__box{
+     text-align: center;
+
+     &-text{
+         margin-top: var(--space-xs);
+     }
+
+     &-description{
+         margin-top: var(--space-xs);
+     }
+  }
+}
