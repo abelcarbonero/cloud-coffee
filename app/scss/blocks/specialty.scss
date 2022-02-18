@@ -2,26 +2,26 @@
 
 .specialty {
   &__btn {
-    margin-top: var(--space-lg);
+    margin-top: var(--space-xl);
 
-    @include breakpoint(tablet){
-        margin-top: 0;
+    @include breakpoint(tablet) {
+      margin-top: 0;
     }
   }
 
-  &__heading{
-      @include breakpoint(tablet){
-          display: flex;
-          align-items: flex-start;
-          gap: 3rem;
-      }
-      @include breakpoint(tablet){
-          gap: 7rem;
-      }
+  &__heading {
+    @include breakpoint(tablet) {
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+    @include breakpoint(laptop) {
+     gap: 12rem;
+    }
   }
 
-  &__title{
-      max-width: 420px;
+  &__title {
+    max-width: 420px;
   }
 
   &__container {
@@ -30,21 +30,56 @@
     grid-template-columns: 300px;
     justify-content: center;
 
-    @include breakpoint(laptop){
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        column-gap: 3rem;
+    @include breakpoint(tablet) {
+      row-gap: 5rem;
     }
-}
 
-  &__box{
-     text-align: center;
+    @include breakpoint(laptop) {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      column-gap: 4rem;
+      margin-top: 7rem;
+    }
+  }
 
-     &-text{
-         margin-top: var(--space-xs);
-     }
+  &__box {
+    text-align: center;
 
-     &-description{
-         margin-top: var(--space-xs);
-     }
+    @include breakpoint(laptop) {
+      text-align: initial;
+    }
+
+    &-img svg {
+      width: 75px;
+      @include breakpoint(tablet) {
+        width: 90px;
+      }
+    }
+
+    &-text {
+      @include breakpoint(tablet) {
+        margin-top: var(--space-xs);
+      }
+    }
+
+    &-description {
+      margin-top: var(--space-xs);
+    }
+  }
+
+  &--line {
+    position: relative;
+
+    &:before {
+      @include breakpoint(laptop) {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -3rem;
+        height: 100px;
+        width: 1px;
+        background-color: var(--color-300);
+      }
+    }
   }
 }

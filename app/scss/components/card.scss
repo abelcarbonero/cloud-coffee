@@ -1,49 +1,44 @@
-.card{
-   &__container{
-       position: relative;
-     
+.card {
+  &__container {
+    position: relative;
+  }
+
+  &__img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  &__description {
+    padding: 0.5rem 0;
+    display: grid;
+  }
+
+  &__title {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-300);
+    line-height: 1.2;
+    align-self: start;
+  }
+
+  &__country {
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-400);
+    align-self: end;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: stroke 0.4s;
+
+    & svg {
+      pointer-events: none;
     }
-
-    &__img{
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-    }
-
-    &__description{
-        padding: .5rem 0;
-        display: grid;
-    }
-
-    &__title{
-        font-size: var(--fs-500);
-        font-weight: var(--fw-300);
-        line-height: 1.2;
-        align-self: start;
-    }
-
-    &__country{
-        margin-bottom: .5rem;
-    }
-
-    &__price{
-        font-weight: var(--fw-700);
-        font-size: var(--fs-400);
-        align-self: end;
-    }
-
-    &__btn{
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        cursor: pointer;
-        transition: stroke .4s;
-
-        & svg{
-            pointer-events: none;
-            
-        }
-
-       
-        
-    }
+  }
 }
