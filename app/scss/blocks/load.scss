@@ -1,0 +1,15 @@
+.load{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-100);
+    display: grid;
+    place-content: center;
+    z-index: 10000;
+
+    &__gif{
+        width: 200px;
+    }
+}

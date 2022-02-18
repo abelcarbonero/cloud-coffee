@@ -3,6 +3,15 @@ const hamburgerBtn = document.querySelector(".menu-btn");
 const body = document.querySelector("body");
 const menuCart = document.querySelector(".cart");
 
+
+//***** GIF LOADER *****/
+document.addEventListener('DOMContentLoaded', ()=>{
+  const load = document.getElementById('load')
+  setTimeout(() => {
+    load.style.display = 'none'
+  }, 1000);
+})
+
 //***** SHOW NAV MENU - NO-SCROLL WHEN NAV ACTIVE
 const showMenu = () => {
   mainNav.classList.toggle("active");
