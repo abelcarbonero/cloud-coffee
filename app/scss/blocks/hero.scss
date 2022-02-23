@@ -3,10 +3,10 @@
 .hero {
   width: 100%;
   position: relative;
-  @include breakpoint(laptop){
+  @include breakpoint(laptop) {
     margin-top: 3rem;
   }
-  @include breakpoint(desktop){
+  @include breakpoint(desktop) {
     margin-top: 10rem;
   }
 
@@ -31,8 +31,7 @@
     font-size: var(--fs-xxl);
     text-transform: uppercase;
     font-weight: var(--fw-700);
-    color: var(--color-600);
-    text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.3);
+    color: var(--color-400);
 
     @include breakpoint(tablet) {
       font-size: 5rem;
@@ -65,6 +64,7 @@
   &__description {
     font-size: var(--fs-sm);
     padding-top: var(--space-xl);
+    color: var(--color-300);
 
     @include breakpoint(tablet) {
       text-align: center;

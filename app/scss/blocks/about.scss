@@ -4,7 +4,7 @@
   
   
   &__text {
-    color: var(--color-500);
+    color: var(--color-400);
     flex-direction: column;
     gap: var(--space-sm);
     padding-inline: 1.5rem;
@@ -16,6 +16,7 @@
 
     @include breakpoint(laptop){
       font-size: var(--fs-sm);
+     
     }
   }
 
@@ -33,7 +34,7 @@
   }
 
   &__description p {
-    line-height: 1.8;
+    line-height: 1.9;
   }
 
  
