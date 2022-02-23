@@ -224,7 +224,7 @@ const renderFooter = () => {
   cartFooter.innerHTML = "";
   if (Object.keys(cart).length === 0) {
     cartFooter.innerHTML = `
-    <p>Tu cesta, está vacía.</p>
+    <p>Tu cesta está vacía.</p>
     `;
 
     return; //Así sale y no sigue hacia abajo pintando parte del footer
