@@ -6,13 +6,17 @@
   width: 100%;
   z-index: 99;
   margin: 0 auto;
-  padding: 1rem;
   transition: transform 0.5s, padding 0.5s;
+
+  @include breakpoint(tablet){
+    padding: 1rem 0;
+  }
 
   @include breakpoint(desktop) {
     position: fixed;
     top: 0;
     left: 0;
+    
 
     &.scroll-down {
       transform: translate3d(0, -100%, 0);
