@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 .header {
   position: relative;
-  padding-bottom: 1rem;
+
   background-color: var(--color-100);
   width: 100%;
   z-index: 99;
@@ -13,7 +13,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    
 
     &.scroll-down {
       transform: translate3d(0, -100%, 0);
