@@ -16,7 +16,7 @@
       gap: 3rem;
     }
     @include breakpoint(laptop) {
-     gap: 12rem;
+      gap: 12rem;
     }
   }
 
@@ -25,8 +25,8 @@
   }
 
   &__container {
-    margin-top: var(--space-xl);
-    row-gap: 3rem;
+    margin-top: var(--space-xxl);
+    row-gap: 4rem;
     grid-template-columns: 300px;
     justify-content: center;
 
@@ -37,7 +37,7 @@
     @include breakpoint(laptop) {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       column-gap: 4rem;
-      margin-top: 7rem;
+      margin-top: 9rem;
     }
   }
 
@@ -56,9 +56,7 @@
     }
 
     &-text {
-      @include breakpoint(tablet) {
-        margin-top: var(--space-xs);
-      }
+      margin-top: var(--space-sm);
     }
 
     &-description {
