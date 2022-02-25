@@ -16,6 +16,7 @@
     @include breakpoint(laptop) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
     }
 
     & p {
@@ -27,7 +28,7 @@
 
   &__title {
     position: absolute;
-    top: 4.5rem;
+    top: 4.1rem;
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: var(--fw-700);
@@ -35,18 +36,18 @@
 
     @include breakpoint(tablet) {
       font-size: 6rem;
-      top: 5.6rem;
+      top: 5.2rem;
     }
 
     @include breakpoint(laptop) {
-      top: -0.6rem;
+      top: -.4rem;
       left: 5rem;
       font-size: 7rem;
     }
 
     @include breakpoint(desktop) {
       font-size: 8.75rem;
-      top: -0.9rem;
+      top: -1.25rem;
     }
   }
 
