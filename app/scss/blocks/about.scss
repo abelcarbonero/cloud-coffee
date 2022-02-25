@@ -1,34 +1,29 @@
 @use "../abstracts/" as *;
 .about {
-
-  
-  
   &__text {
     color: var(--color-400);
     flex-direction: column;
     gap: var(--space-sm);
     padding-inline: 1.5rem;
-    
 
     @include breakpoint(tablet) {
       padding-inline: 3rem;
     }
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       font-size: var(--fs-sm);
-     
     }
   }
 
   &__title,
-  &__subtitle{
-    @include breakpoint(tablet){
+  &__subtitle {
+    @include breakpoint(tablet) {
       text-align: center;
     }
   }
 
-  &__subtitle{
-    @include breakpoint(tablet){
+  &__subtitle {
+    @include breakpoint(tablet) {
       margin-bottom: var(--space-md);
     }
   }
@@ -37,16 +32,10 @@
     line-height: 1.9;
   }
 
- 
-
   &__images {
+    margin-top: var(--space-xl);
     @include breakpoint(tablet) {
       grid-template-columns: repeat(2, 1fr);
-      margin-top: var(--space-lg);
-    }
-
-    @include breakpoint(laptop){
-      margin-top: var(--space-xl);
     }
   }
 
@@ -55,19 +44,17 @@
     object-fit: cover;
   }
 
-
   &__btn {
     margin-top: 2rem;
     margin-bottom: 1rem;
 
-    @include breakpoint(tablet){
-     
-  margin-top: 3rem;
+    @include breakpoint(tablet) {
+      margin-top: 3rem;
     }
 
-    @include breakpoint(laptop){
-     align-self: center;
-     margin-top: 5rem;
+    @include breakpoint(laptop) {
+      align-self: center;
+      margin-top: 5rem;
     }
   }
 }
