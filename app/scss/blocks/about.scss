@@ -34,8 +34,10 @@
 
   &__images {
     margin-top: var(--space-xl);
+    
     @include breakpoint(tablet) {
       grid-template-columns: repeat(2, 1fr);
+      margin-top: var(--space-xxl);
     }
   }
 

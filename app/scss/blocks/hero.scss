@@ -28,13 +28,13 @@
   &__title {
     position: absolute;
     top: 4.5rem;
-    font-size: var(--fs-xxl);
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: var(--fw-700);
     color: var(--color-400);
 
     @include breakpoint(tablet) {
-      font-size: 5rem;
+      font-size: 6rem;
       top: 5.6rem;
     }
 
