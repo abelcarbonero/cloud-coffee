@@ -43,7 +43,7 @@
 
 .article {
  
-  gap: 2rem;
+  gap: 3rem;
 
   @include breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -56,6 +56,11 @@
       margin-bottom: var(--space-xl);
       justify-self: flex-start;
     }
+  }
+
+  &__description{
+    font-weight: var(--fw-300);
+    color: var(--color-600);
   }
 
   &__img {

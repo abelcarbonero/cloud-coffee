@@ -2,8 +2,6 @@
 .about {
   &__text {
     color: var(--color-400);
-    flex-direction: column;
-    gap: var(--space-sm);
     padding-inline: 1.5rem;
 
     @include breakpoint(tablet) {
@@ -15,17 +13,23 @@
     }
   }
 
-  &__title,
-  &__subtitle {
-    @include breakpoint(tablet) {
-      text-align: center;
-    }
-  }
-
-  &__subtitle {
+  &__subtitle{
+    margin-top: var(--space-xs);
     @include breakpoint(tablet) {
       margin-bottom: var(--space-md);
     }
+  }
+
+  &__title,
+  &__subtitle {
+    @include breakpoint(laptop) {
+      
+    }
+  }
+
+
+  &__description{
+    margin-top: var(--space-md);
   }
 
   &__description p {
@@ -47,12 +51,8 @@
   }
 
   &__btn {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
-
-    @include breakpoint(tablet) {
-      margin-top: 3rem;
-    }
 
     @include breakpoint(laptop) {
       align-self: center;
