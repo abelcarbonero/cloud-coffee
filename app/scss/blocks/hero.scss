@@ -27,38 +27,43 @@
   }
 
   &__title {
-    position: absolute;
-    top: 4.1rem;
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: var(--fw-700);
     color: var(--color-400);
+    font-family: var(--ff-primary);
+    font-size: 70px;
+    font-weight: var(--fw-700);
+    position: absolute;
+    text-transform: uppercase;
+    top: 5.3rem;
 
     @include breakpoint(tablet) {
-      font-size: 6rem;
+      font-size: 140px;
       top: 5.2rem;
     }
 
     @include breakpoint(laptop) {
-      top: -.4rem;
+     top: -1.5rem;
       left: 5rem;
-      font-size: 7rem;
+     
+    }
+    @include breakpoint(desktop) {
+     top: -1.5rem;
+      left: 5rem;
+     
+     
     }
 
-    @include breakpoint(desktop) {
-      font-size: 8.75rem;
-      top: -1.25rem;
-    }
+    
   }
 
   &__img {
     margin-top: var(--space-xl);
-    aspect-ratio: 16/9;
     object-fit: cover;
 
     @include breakpoint(tablet) {
       margin-top: var(--space-xxl);
-      aspect-ratio: 21 / 9;
+    }
+    @include breakpoint(desktop) {
+      aspect-ratio: 16 / 9;
     }
   }
 
