@@ -37,7 +37,7 @@
 
     @include breakpoint(tablet) {
       font-size: 140px;
-      top: 5.2rem;
+      top: 8.25rem;
     }
 
     @include breakpoint(laptop) {
@@ -62,8 +62,9 @@
     @include breakpoint(tablet) {
       margin-top: var(--space-xxl);
     }
-    @include breakpoint(desktop) {
+    @include breakpoint(laptop) {
       aspect-ratio: 16 / 9;
+      margin-top: 2.75rem;
     }
   }
 

@@ -68,6 +68,7 @@
     @include breakpoint(laptop) {
       font-size: var(--fs-sm);
       font-weight: 700;
+      letter-spacing: 2px;
       color: var(--color-500);
     }
 
@@ -88,7 +89,7 @@
       @include breakpoint(laptop) {
         top: initial;
         right: initial;
-        bottom: -0.25rem;
+        bottom: -0.5rem;
         left: 50%;
         transform: translateX(-50%);
       }
