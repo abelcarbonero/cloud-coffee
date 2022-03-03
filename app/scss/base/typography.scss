@@ -28,7 +28,7 @@
   }
 
   @include breakpoint(tablet) {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-xxl);
   }
 }
 
@@ -45,7 +45,7 @@
     }
 
     @include breakpoint(tablet) {
-      font-size: var(--fs-lg);
+      font-size: var(--fs-xl);
     }
   }
 
@@ -58,7 +58,7 @@
     }
 
     @include breakpoint(tablet) {
-      font-size: var(--fs-md);
+      font-size: var(--fs-lg);
     }
   }
 }

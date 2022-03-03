@@ -3,11 +3,12 @@
 .hero {
   width: 100%;
   position: relative;
+  
   @include breakpoint(laptop) {
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
   @include breakpoint(desktop) {
-    margin-top: 10rem;
+    margin-top: 13rem;
   }
 
   &__header {
@@ -41,18 +42,13 @@
     }
 
     @include breakpoint(laptop) {
-     top: -1.5rem;
+      top: -1.5rem;
       left: 5rem;
-     
     }
     @include breakpoint(desktop) {
-     top: -1.5rem;
+      top: -1.5rem;
       left: 5rem;
-     
-     
     }
-
-    
   }
 
   &__img {
@@ -63,7 +59,6 @@
       margin-top: var(--space-xxl);
     }
     @include breakpoint(laptop) {
-      aspect-ratio: 16 / 9;
       margin-top: 2.75rem;
     }
   }
@@ -71,7 +66,7 @@
   &__description {
     font-size: var(--fs-sm);
     padding-top: var(--space-xl);
-    color: var(--color-300);
+    color: var(--color-400);
 
     @include breakpoint(tablet) {
       text-align: center;

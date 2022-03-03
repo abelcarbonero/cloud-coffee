@@ -7,10 +7,13 @@
   padding: 0 1.5rem;
   transition: transform 0.3s;
 
-  
+  @include breakpoint(tablet){
+    padding-inline: 3rem;
+  }
 
   @include breakpoint(laptop) {
     align-items: flex-end;
+    padding-inline: 5rem;
   }
 
   &__logo {
