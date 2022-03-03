@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const load = document.getElementById('load')
   setTimeout(() => {
     load.style.display = 'none'
-  }, 1000);
+  }, 1500);
 })
 
 //***** SHOW NAV MENU - NO-SCROLL WHEN NAV ACTIVE

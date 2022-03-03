@@ -30,6 +30,10 @@
 
   &__description {
     margin-top: var(--space-md);
+
+    @include breakpoint(laptop){
+      margin-top: var(--space-lg);
+    }
   }
 
   &__description p {

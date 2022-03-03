@@ -3,11 +3,11 @@
   /* font-sizes */
   --fs-biggest: 4.4rem;
   --fs-xxl: 3rem; 
-  --fs-xl: 2.4rem; //38px
-  --fs-lg: 2rem; //32px
-  --fs-md: 1.5rem; // 24px
-  --fs-sm: 1.125rem; //18px
-  --fs-xs: 1rem; // 16px
+  --fs-xl: 2.4rem; 
+  --fs-lg: 2rem; 
+  --fs-md: 1.5rem; 
+  --fs-sm: 1.125rem; 
+  --fs-xs: 1rem; 
 
   /* font-weight */
   --fw-300: 300;
@@ -34,19 +34,24 @@
 
 .heading {
   &-1 {
-    color: var(--color-400);
+    color: var(--color-500);
     font-size: var(--fs-md);
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: var(--fw-700);
 
+    @include breakpoint(tablet) {
+      font-size: var(--fs-xl);
+    }
+    @include breakpoint(laptop) {
+      font-size: var(--fs-xxl);
+    }
+    
     &--white {
       color: var(--color-100);
     }
 
-    @include breakpoint(tablet) {
-      font-size: var(--fs-xl);
-    }
+  
   }
 
   &-2 {

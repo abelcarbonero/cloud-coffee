@@ -56,19 +56,15 @@
 
   &__link {
     font-size: var(--fs-md);
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     position: relative;
     text-transform: uppercase;
     color: var(--color-100);
-
-    @include breakpoint(tablet) {
-      font-size: var(--fs-md);
-    }
+    font-weight: var(--fw-700);
 
     @include breakpoint(laptop) {
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: var(--color-400);
+      font-size: var(--fs-md);
+  color: var(--color-400);
     }
 
     &:after,
