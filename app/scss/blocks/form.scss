@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 .form {
-  font-size: var(--fs-sm);
+ 
   width: 100%;
   padding-top: 2rem;
 
@@ -9,6 +9,7 @@
 
   @include breakpoint(laptop) {
     padding-top: 0;
+    
   }
 
   &__group {

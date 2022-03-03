@@ -2,7 +2,7 @@
 :root {
   /* font-sizes */
   --fs-biggest: 4.4rem;
-  --fs-xxl: 3.5rem; //70px
+  --fs-xxl: 3rem; 
   --fs-xl: 2.4rem; //38px
   --fs-lg: 2rem; //32px
   --fs-md: 1.5rem; // 24px
@@ -20,7 +20,7 @@
 // HEADINGS
 .section-title {
   font-size: var(--fs-lg);
-  color: var(--color-600);
+  color: var(--color-400);
   text-transform: uppercase;
 
   &--white {
@@ -34,7 +34,7 @@
 
 .heading {
   &-1 {
-    color: var(--color-500);
+    color: var(--color-400);
     font-size: var(--fs-md);
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -50,7 +50,7 @@
   }
 
   &-2 {
-    color: var(--color-500);
+    color: var(--color-400);
     font-size: var(--fs-sm);
 
     &--white {

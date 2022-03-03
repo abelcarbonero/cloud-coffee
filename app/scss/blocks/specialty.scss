@@ -37,17 +37,13 @@
 
     @include breakpoint(laptop) {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      column-gap: 4rem;
+      column-gap: 5rem;
       margin-top: 9rem;
     }
   }
 
   &__box {
     text-align: center;
-
-    @include breakpoint(laptop) {
-      text-align: initial;
-    }
 
     &-img svg {
       width: 75px;

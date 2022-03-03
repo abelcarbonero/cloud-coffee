@@ -45,6 +45,9 @@
   @include breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);
   }
+  @include breakpoint(laptop) {
+    font-size: var(--fs-md);
+  }
 
   &__title {
     margin-bottom: var(--space-md);
