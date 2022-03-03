@@ -1,6 +1,8 @@
 @use "../abstracts/" as *;
 
 .team {
+  
+ 
   &__header {
     display: flex;
     flex-direction: column;
@@ -21,6 +23,7 @@
   }
 
   &__container {
+    font-weight: var(--fw-300);
     gap: var(--space-xxl);
     margin-top: var(--space-lg);
 
@@ -31,7 +34,7 @@
     @include breakpoint(laptop) {
       margin-top: 7rem;
       gap: 9rem;
-      font-size: var(--fs-sm);
+      font-size: var(--fs-md);
     }
   }
 
