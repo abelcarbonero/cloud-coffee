@@ -9,6 +9,10 @@ body {
   background-color: var(--color-100);
   min-height: 100vh;
   line-height: 1.5;
+
+  @include breakpoint(tablet){
+    font-size: 18px;
+  }
 }
 
 
@@ -17,9 +21,5 @@ body {
 
   @include breakpoint(tablet){
     margin-top: var(--space-sm);
-  }
-
-  @include breakpoint(laptop){
-    margin-top: var(--space-md);
   }
 }

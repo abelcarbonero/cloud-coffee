@@ -66,7 +66,7 @@
   &__description {
     font-size: var(--fs-sm);
     padding-top: var(--space-xl);
-    color: var(--color-400);
+    color: var(--color-300);
 
     @include breakpoint(tablet) {
       text-align: center;
