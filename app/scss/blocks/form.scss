@@ -1,5 +1,6 @@
 @use "../abstracts/" as *;
 .form {
+  font-size: var(--fs-sm);
   width: 100%;
   padding-top: 2rem;
 
@@ -19,6 +20,7 @@
 
   &__label {
     margin-bottom: 5px;
+    font-size: var(--fs-xs);
     font-weight: var(--fw-700);
     text-transform: uppercase;
   }

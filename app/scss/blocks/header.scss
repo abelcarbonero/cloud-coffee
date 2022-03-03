@@ -12,7 +12,7 @@
     padding: 1rem 0;
   }
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     position: fixed;
     top: 0;
     left: 0;

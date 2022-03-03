@@ -2,13 +2,12 @@
 
 .food {
   gap: 4rem;
-  
 
-  @include breakpoint(tablet){
+  @include breakpoint(tablet) {
     gap: 7rem;
   }
 
-  @include breakpoint(laptop){
+  @include breakpoint(laptop) {
     gap: 10rem;
     font-size: var(--fs-sm);
   }
@@ -23,26 +22,24 @@
       padding: 0 3rem;
     }
 
-    & > p + p{
-      margin-top:var(--space-sm);
-
-     
+    & > p + p {
+      margin-top: var(--space-sm);
     }
   }
 
-  &__btn{
+  &__btn {
     justify-self: center;
     margin-bottom: var(--space-xl);
     margin-top: var(--space-sm);
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       margin-bottom: 7rem;
     }
   }
 }
 
 .article {
- 
+  font-size: var(--fs-sm);
   gap: 3rem;
 
   @include breakpoint(tablet) {
@@ -52,13 +49,13 @@
   &__title {
     margin-bottom: var(--space-md);
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       margin-bottom: var(--space-xl);
       justify-self: flex-start;
     }
   }
 
-  &__description{
+  &__description {
     font-weight: var(--fw-300);
     color: var(--color-600);
   }
@@ -71,6 +68,4 @@
       aspect-ratio: 7/8;
     }
   }
-
-  
 }

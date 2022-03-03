@@ -1,14 +1,10 @@
-@use '../abstracts/' as *;
-.section{
-    padding-top: 1.5rem ;
-    padding-bottom: 5rem;
+@use "../abstracts/" as *;
+.section {
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
 
- @include breakpoint(tablet){
-    padding-top: 2rem ;
-    padding-bottom: 8rem;
- }
- @include breakpoint(desktop){
-   padding-top: 2rem ;
-   padding-bottom:11rem;
-}
+  @include breakpoint(tablet) {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
 }

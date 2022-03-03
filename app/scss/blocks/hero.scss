@@ -5,11 +5,9 @@
   position: relative;
   
   @include breakpoint(laptop) {
-    margin-top: 6rem;
-  }
-  @include breakpoint(desktop) {
     margin-top: 13rem;
   }
+  
 
   &__header {
     position: relative;
@@ -30,25 +28,23 @@
   &__title {
     color: var(--color-400);
     font-family: var(--ff-primary);
-    font-size: 70px;
+    font-size: 60px;
     font-weight: var(--fw-700);
     position: absolute;
     text-transform: uppercase;
-    top: 5.3rem;
+    top: 5.5rem;
 
     @include breakpoint(tablet) {
-      font-size: 140px;
-      top: 8.25rem;
+      font-size: 100px;
+      top: 7.1rem;
     }
 
     @include breakpoint(laptop) {
-      top: -1.5rem;
+      font-size: 140px;
+      top: -1.1rem;
       left: 5rem;
     }
-    @include breakpoint(desktop) {
-      top: -1.5rem;
-      left: 5rem;
-    }
+    
   }
 
   &__img {
@@ -59,7 +55,7 @@
       margin-top: var(--space-xxl);
     }
     @include breakpoint(laptop) {
-      margin-top: 2.75rem;
+      margin-top: 3.85rem;
     }
   }
 
