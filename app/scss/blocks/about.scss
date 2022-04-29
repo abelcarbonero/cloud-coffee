@@ -1,9 +1,7 @@
 @use "../abstracts/" as *;
 .about {
   &__text {
-    font-weight: var(--fw-300);
-    font-size: var(--fs-sm);
-    color: var(--color-400);
+   
     padding-inline: 1.5rem;
 
     @include breakpoint(tablet) {
@@ -11,7 +9,7 @@
     }
 
     @include breakpoint(laptop) {
-      font-size: var(--fs-md);
+     
     }
   }
 

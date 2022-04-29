@@ -9,7 +9,6 @@
 
   @include breakpoint(laptop) {
     gap: 10rem;
-    font-size: var(--fs-sm);
   }
 
   & .column-1 {
@@ -39,14 +38,10 @@
 }
 
 .article {
-  font-size: var(--fs-sm);
   gap: 3rem;
 
   @include breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);
-  }
-  @include breakpoint(laptop) {
-    font-size: var(--fs-md);
   }
 
   &__title {
@@ -56,11 +51,6 @@
       margin-bottom: var(--space-xl);
       justify-self: flex-start;
     }
-  }
-
-  &__description {
-    font-weight: var(--fw-300);
-    color: var(--color-600);
   }
 
   &__img {

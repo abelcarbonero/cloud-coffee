@@ -9,14 +9,14 @@
   --fs-sm: 1.125rem;
   --fs-xs: 1rem;
 
-  --fs-fluid-text: clamp(1rem, calc(0.95rem + 0.25vw), 1.25rem);
+  --fs-fluid-text: clamp(1rem, calc(0.9rem + 0.5vw), 1.5rem);
   --fs-fluid-xxl: clamp(2.5rem, calc(1.13rem + 6.88vw), 9.38rem);
   /* font-weight */
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-600: 600;
-  --fw-700: 700;
-  --fw-xbold: 900;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-xbold: 800;
 }
 
 // HEADINGS

@@ -1,11 +1,6 @@
 @use "../abstracts/" as *;
 
 .specialty {
-  font-size: var(--fs-sm);
-
-  @include breakpoint(laptop){
-    font-size: var(--fs-md);
-  }
   &__btn {
     margin-top: var(--space-xl);
 
@@ -58,9 +53,8 @@
 
     &-text {
       margin-top: var(--space-sm);
-      font-weight: var(--fw-300);
 
-      @include breakpoint(laptop){
+      @include breakpoint(laptop) {
         margin-top: var(--space-md);
       }
     }
