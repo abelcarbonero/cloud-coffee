@@ -2,13 +2,15 @@
 :root {
   /* font-sizes */
   --fs-biggest: 4.4rem;
-  --fs-xxl: 3rem; 
-  --fs-xl: 2.4rem; 
-  --fs-lg: 2rem; 
-  --fs-md: 1.5rem; 
-  --fs-sm: 1.125rem; 
-  --fs-xs: 1rem; 
+  --fs-xxl: 3rem;
+  --fs-xl: 2.4rem;
+  --fs-lg: 2rem;
+  --fs-md: 1.5rem;
+  --fs-sm: 1.125rem;
+  --fs-xs: 1rem;
 
+  --fs-fluid-text: clamp(1rem, calc(0.95rem + 0.25vw), 1.25rem);
+  --fs-fluid-xxl: clamp(2.5rem, calc(1.13rem + 6.88vw), 9.38rem);
   /* font-weight */
   --fw-300: 300;
   --fw-400: 400;
@@ -46,12 +48,10 @@
     @include breakpoint(laptop) {
       font-size: var(--fs-xxl);
     }
-    
+
     &--white {
       color: var(--color-100);
     }
-
-  
   }
 
   &-2 {
