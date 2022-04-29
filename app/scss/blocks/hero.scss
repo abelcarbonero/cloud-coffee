@@ -7,25 +7,25 @@
   
 
   &__header {
+    position: absolute;
+    top: 1.6rem;
     padding-top: 3rem;
     flex-direction: column;
-    position: relative;
     gap: 1rem;
+
+    p{
+      line-height: 1.4;
+    }
 }
 
 
   &__title {
-    position: relative;
+    
     font-size: var(--fs-fluid-xxl);
     text-transform: uppercase;
     font-weight: 800;
   }
 
-  &__img {
-    position: absolute;
-    z-index: -1;
-    top: 4.1rem;
-  }
 
   &__description {
     font-size: var(--fs-fluid-text);
