@@ -2,9 +2,14 @@
 
 .specialty {
   svg {
-    width: 5rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     fill: var(--color-primary);
+
+    @include breakpoint(laptop){
+      width: 7rem;
+      height: 7rem;
+    }
   }
   &__btn {
     margin-top: 3rem;
@@ -26,26 +31,32 @@
   }
 
   &__container {
-    margin-top: 5rem;
+    margin-top: 6rem;
     row-gap: 4rem;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
 
-    @include breakpoint(laptop) {
+    @include breakpoint(tablet) {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      column-gap: 5rem;
-      margin-top: 9rem;
+      column-gap: 3rem;
+      
+    }
+
+    @include breakpoint(laptop){
+      margin-top: 8rem;
+      column-gap: 7rem;
     }
   }
 
   &__box {
-    // text-align: center;
+    text-align: center;
 
     &-text {
       margin-top: 1rem;
     }
 
     &-description {
+      max-width: 335px;
       margin-top: 0.75rem;
     }
   }
