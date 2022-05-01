@@ -1,71 +1,31 @@
 @use "../abstracts/" as *;
 :root {
   /* font-sizes */
-  --fs-biggest: 4.4rem;
-  --fs-xxl: 3rem;
-  --fs-xl: 2.4rem;
-  --fs-lg: 2rem;
-  --fs-md: 1.5rem;
-  --fs-sm: 1.125rem;
-  --fs-xs: 1rem;
-
-  --fs-fluid-text: clamp(1rem, calc(0.9rem + 0.5vw), 1.5rem);
-  --fs-fluid-xxl: clamp(2.5rem, calc(1.13rem + 6.88vw), 9.38rem);
+  
   /* font-weight */
-  --fw-light: 200;
+  --fw-xlight: 100;
+  --fw-light: 300;
   --fw-regular: 400;
-  --fw-semibold: 600;
   --fw-bold: 700;
-  --fw-xbold: 800;
+  --fw-xbold: 900;
 }
 
 // HEADINGS
 .section-title {
-  font-size: var(--fs-lg);
-  color: var(--color-400);
+  font-size: 1.75rem;
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
+  letter-spacing: 1px;
 
   &--white {
     color: var(--color-100);
   }
 
   @include breakpoint(tablet) {
-    font-size: var(--fs-xxl);
+    
   }
 }
 
-.heading {
-  &-1 {
-    color: var(--color-500);
-    font-size: var(--fs-md);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: var(--fw-bold);
 
-    @include breakpoint(tablet) {
-      font-size: var(--fs-xl);
-    }
-    @include breakpoint(laptop) {
-      font-size: var(--fs-xxl);
-    }
-
-    &--white {
-      color: var(--color-100);
-    }
-  }
-
-  &-2 {
-    color: var(--color-400);
-    font-size: var(--fs-sm);
-
-    &--white {
-      color: var(--color-100);
-    }
-
-    @include breakpoint(tablet) {
-      font-size: var(--fs-lg);
-    }
-  }
-}
 
 

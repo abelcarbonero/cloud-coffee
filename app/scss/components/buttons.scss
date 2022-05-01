@@ -5,37 +5,25 @@
   width: fit-content;
   text-transform: uppercase;
   text-align: center;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
   letter-spacing: 1px;
   font-weight: var(--fw-bold);
   padding: 0.8rem;
   border-radius: 4px;
-  font-size: var(--fs-xs);
-  transition: opacity 0.3s;
+  transition: all 0.3s;
   color: var(--color-100);
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
-
-  @include breakpoint(tablet){
-    padding: 1rem 1.2rem;
-  }
-
-  @include breakpoint(laptop) {
-    &--xl {
-      padding: 1.25rem 1.75rem;
-      font-size: var(--fs-xs);
-    }
-  }
-
-  &--white {
-    border: 1px solid white;
-    color: var(--color-100);
+  &--submit {
     background-color: var(--color-600);
+    border: 1px solid white;
 
-    @include breakpoint(laptop) {
-      padding: 0.75rem;
+    &:hover{
+      background-color: var(--color-primary);
+      opacity: 1;
+      border: 1px solid var(--color-primary)
     }
   }
 }
