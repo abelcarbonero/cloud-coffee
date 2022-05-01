@@ -13,6 +13,10 @@
   }
   &__btn {
     margin-top: 3rem;
+
+    @include breakpoint(tablet){
+      margin-top: 0;
+    }
   }
 
   &__heading {

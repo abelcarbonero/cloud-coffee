@@ -1,16 +1,9 @@
 @use "../abstracts/" as *;
 .about {
+  margin-top: 3rem;
+  
   &__text {
-   
-    padding-inline: 1.5rem;
-
-    @include breakpoint(tablet) {
-      padding-inline: 3rem;
-    }
-
-    @include breakpoint(laptop) {
-     
-    }
+    
   }
 
   &__subtitle {
@@ -29,7 +22,7 @@
   &__description {
     margin-top: var(--space-md);
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       margin-top: var(--space-lg);
     }
   }

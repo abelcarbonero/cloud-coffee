@@ -9,16 +9,15 @@
   background-color: var(--color-600);
   font-weight: var(--fw-300);
 
-  @include breakpoint(tablet){
+  @include breakpoint(tablet) {
     margin-top: 5rem;
   }
 
-
-  &__title{
+  &__title {
     margin-bottom: 2.5rem;
 
-    h3{
-      margin-top: .5rem;
+    h3 {
+      margin-top: 0.5rem;
     }
   }
 
@@ -29,7 +28,7 @@
       gap: 7rem;
     }
 
-    p{
+    p {
       line-height: 1.7;
     }
   }
@@ -55,7 +54,6 @@
     }
   }
 
-
   &__contact__container {
     position: relative;
     margin-top: 1rem;
@@ -76,13 +74,6 @@
       position: absolute;
       bottom: 12rem;
     }
-
-    & > p {
-      text-align: center;
-      font-size: var(--fs-200);
-      color: var(--color-300);
-      margin-top: 0.75rem;
-    }
   }
 
   &__list {
@@ -94,6 +85,12 @@
     svg {
       width: 42px;
       height: 42px;
+      stroke-width: 1.25px;
+      transition: .3s;
+
+      &:hover{
+       stroke: var(--color-accent);
+      }
     }
   }
 

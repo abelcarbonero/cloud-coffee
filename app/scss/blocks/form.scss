@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 .form {
   width: 100%;
+  max-width: 500px;
   padding-top: 3rem;
 
   display: flex;
@@ -28,9 +29,9 @@
   &__input {
     height: 50px;
     padding-left: 1rem;
-    border-radius: 4px;
     background-color: #353535;
     border: none;
+    color: white;
   }
 
   &__textarea {
