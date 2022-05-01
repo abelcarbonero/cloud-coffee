@@ -11,7 +11,7 @@
 
 .container-narrow{
     margin: 0 auto;
-    max-width: 37rem;
+    max-width: 900px;
     padding-inline: 1.5rem;
 
    @include breakpoint(laptop){
