@@ -26,10 +26,10 @@
   }
 
   &__container {
-    margin-top: 6rem;
+    margin-top: 5rem;
     row-gap: 4rem;
     grid-template-columns: 300px;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 
     @include breakpoint(laptop) {
