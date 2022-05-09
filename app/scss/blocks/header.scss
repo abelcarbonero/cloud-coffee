@@ -1,15 +1,24 @@
 @use "../abstracts/" as *;
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: var(--color-100);
   width: 100%;
   z-index: 99;
-  margin: 0 auto;
+
   transition: transform 0.5s, padding 0.5s;
+
+  &.scroll-down {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  &.scroll-up {
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+  }
 
   @include breakpoint(tablet) {
     padding: 1rem 0;
   }
-
-  
 }

@@ -1,6 +1,7 @@
+const body = document.querySelector("body");
+const header=document.querySelector('.header')
 const mainNav = document.querySelector(".main-nav");
 const hamburgerBtn = document.querySelector(".menu-btn");
-const body = document.querySelector("body");
 const menuCart = document.querySelector(".cart");
 
 
@@ -54,23 +55,23 @@ const scrollMenu = () => {
 window.addEventListener("scroll", scrollMenu);
 
 //***** SHOW/HIDE HEADER WHEN SCROLL *****
-const nav = document.querySelector(".main-nav");
+
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
 
   if (currentScroll <= 0) {
-    nav.classList.remove("scroll-up");
+    header.classList.remove("scroll-up");
   }
 
-  if (currentScroll > lastScroll && !nav.classList.contains("scroll-down")) {
-    nav.classList.remove("scroll-up");
-    nav.classList.add("scroll-down");
+  if (currentScroll > lastScroll && !header.classList.contains("scroll-down")) {
+    header.classList.remove("scroll-up");
+    header.classList.add("scroll-down");
   }
-  if (currentScroll < lastScroll && nav.classList.contains("scroll-down")) {
-    nav.classList.remove("scroll-down");
-    nav.classList.add("scroll-up");
+  if (currentScroll < lastScroll && header.classList.contains("scroll-down")) {
+    header.classList.remove("scroll-down");
+    header.classList.add("scroll-up");
   }
 
   lastScroll = currentScroll;

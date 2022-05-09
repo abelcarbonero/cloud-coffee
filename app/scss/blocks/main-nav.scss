@@ -32,14 +32,7 @@
     opacity: initial;
     visibility: initial;
 
-    &.scroll-down {
-      transform: translate3d(0, -100%, 0);
-    }
-
-    &.scroll-up {
-      box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
-      padding-top: 0;
-    }
+    
   }
 
   &__list {
