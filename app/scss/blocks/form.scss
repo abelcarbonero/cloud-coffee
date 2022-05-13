@@ -7,20 +7,19 @@
   display: flex;
   flex-direction: column;
 
-  @include breakpoint(laptop) {
-    padding-top: 0;
+  @include breakpoint(tablet) {
   }
 
   &__group {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-block: .75rem;
+    padding-block: 0.75rem;
   }
 
   &__label {
     font-size: 0.875rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-weight: var(--fw-bold);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -43,7 +42,7 @@
     background-color: #353535;
     border: none;
 
-    &::placeholder{
+    &::placeholder {
       color: white;
     }
 
@@ -55,6 +54,5 @@
 
   &__btn {
     margin-top: 1rem;
-    width: 100%;
   }
 }

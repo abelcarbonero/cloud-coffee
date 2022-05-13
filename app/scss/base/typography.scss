@@ -12,7 +12,7 @@
 
 // HEADINGS
 .section-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: var(--fw-xbold);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -22,7 +22,8 @@
   }
 
   @include breakpoint(tablet) {
-    
+   font-size: 2.5rem;
+   letter-spacing: 3px;
   }
 }
 
@@ -33,6 +34,11 @@
   margin-bottom: 4rem;
   font-weight: var(--fw-light);
   line-height: 1.5;
+
+  @include breakpoint(tablet){
+    font-size: 32px;
+    margin-bottom: 7rem;
+  }
 }
 
 

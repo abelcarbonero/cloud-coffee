@@ -31,18 +31,12 @@
     transition: initial;
     opacity: initial;
     visibility: initial;
-
-    
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
-
-    @include breakpoint(tablet) {
-      gap: var(--space-md);
-    }
+    gap: 1rem;
 
     @include breakpoint(laptop) {
       flex-direction: row;
@@ -65,7 +59,6 @@
     font-weight: var(--fw-bold);
 
     @include breakpoint(laptop) {
-      font-size: var(--fs-md);
       color: var(--color-400);
     }
 
@@ -79,7 +72,7 @@
       width: 0.5rem;
       height: 0.5rem;
       border-radius: 50%;
-      background-color: var(--color-primary-dark);
+      background-color: var(--color-accent);
       opacity: 0;
       transition: opacity 0.3s;
 
@@ -108,6 +101,11 @@
   }
 
   &__social-list {
-    gap: 1.25rem;
+    gap: 1rem;
+
+    svg{
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }

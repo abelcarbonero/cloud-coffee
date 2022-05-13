@@ -6,7 +6,7 @@
     height: 5.5rem;
     fill: var(--color-primary);
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       width: 7rem;
       height: 7rem;
     }
@@ -14,7 +14,7 @@
   &__btn {
     margin-top: 3rem;
 
-    @include breakpoint(tablet){
+    @include breakpoint(tablet) {
       margin-top: 0;
     }
   }
@@ -43,10 +43,10 @@
     @include breakpoint(tablet) {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       column-gap: 3rem;
-      
+      align-items: initial;
     }
 
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       margin-top: 8rem;
       column-gap: 7rem;
     }
@@ -60,8 +60,13 @@
     }
 
     &-description {
-      max-width: 335px;
       margin-top: 0.75rem;
+
+      @include breakpoint(tablet) {
+        font-weight: var(--fw-light);
+        margin-top: 1rem;
+        font-size: 18px;
+      }
     }
   }
 

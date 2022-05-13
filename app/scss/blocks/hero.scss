@@ -4,6 +4,11 @@
   margin-top: 7rem;
   width: 100%;
 
+  @include breakpoint(tablet){
+    margin-top: 11rem;
+    margin-bottom: 4rem;
+  }
+
   &__container {
     position: relative;
   }
@@ -19,6 +24,11 @@
     @include breakpoint(phone) {
       font-size: 65px;
       top: 5.5rem;
+    }
+
+    @include breakpoint(tablet){
+      top: 9.5rem;
+      font-size: 120px;
     }
   }
 

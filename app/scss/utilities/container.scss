@@ -11,23 +11,13 @@
 
 .container-narrow{
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 700px;
     padding-inline: 1.5rem;
 
-   @include breakpoint(laptop){
-        max-width: 46rem;
-       
-    }
+   
 }
 
-.container-md{
-    margin: 0 auto;
-    max-width: 60rem;
-    padding-inline: 1.5rem;
 
-    @include breakpoint(tablet){
-        padding: 0 3rem;
-    }
-}
+
 
 

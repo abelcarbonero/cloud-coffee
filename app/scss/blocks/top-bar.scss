@@ -7,25 +7,19 @@
   padding: 0 1.5rem;
   transition: transform 0.3s;
 
-  @include breakpoint(tablet){
+  @include breakpoint(tablet) {
     padding-inline: 3rem;
   }
 
   @include breakpoint(laptop) {
-    align-items: flex-end;
+   
     padding-inline: 5rem;
-  }
-
-  &__logo {
-    width: 130px;
-
-    @include breakpoint(tablet) {
-      width: 160px;
-    }
   }
 }
 
-.logo{
-  font-size: 1.75rem;
+.logo {
+  font-size: 2rem;
+  font-family: var(--ff-secondary);
+  font-weight: bold;
   color: var(--color-600);
 }

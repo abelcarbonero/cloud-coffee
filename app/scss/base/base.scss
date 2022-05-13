@@ -4,17 +4,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--ff-primary);
-  font-size: var(--fs-fluid-text);
-  color: var(--color-500);
+
   background-color: var(--color-100);
   min-height: 100vh;
   line-height: 1.5;
-}
-
-* > p + p {
-  margin-top: 1.25rem;
 
   @include breakpoint(tablet) {
-    margin-top: var(--space-sm);
+    font-size: 20px;
   }
 }

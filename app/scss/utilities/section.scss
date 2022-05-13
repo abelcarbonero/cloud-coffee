@@ -1,4 +1,8 @@
 @use "../abstracts/" as *;
 .section {
   padding-block: 4rem;
+
+  @include breakpoint(tablet){
+    padding-block: 8rem;
+  }
 }
