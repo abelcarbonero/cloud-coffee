@@ -12,8 +12,8 @@
 
 // HEADINGS
 .section-title {
-  font-size: 1.75rem;
-  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  font-weight: var(--fw-xbold);
   text-transform: uppercase;
   letter-spacing: 1px;
 
@@ -24,6 +24,15 @@
   @include breakpoint(tablet) {
     
   }
+}
+
+
+.subtitle{
+  font-size: 18px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: var(--fw-light);
+  line-height: 1.5;
 }
 
 
