@@ -1,11 +1,5 @@
 @use "../abstracts/" as *;
 .about {
-  margin-top: 3rem;
-  
-  &__text {
-    
-  }
-
   &__subtitle {
     margin-top: var(--space-xs);
     @include breakpoint(tablet) {
