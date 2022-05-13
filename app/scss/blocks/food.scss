@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .food {
-  gap: 4rem;
+  gap: 8rem;
 
   @include breakpoint(tablet) {
     gap: 7rem;
