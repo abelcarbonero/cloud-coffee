@@ -2,17 +2,23 @@
 
 .intro {
   font-size: 22px;
-  
+  place-content: center;
   text-align: left;
 
-  p{
-      line-height: 1.4;
+  p {
+    line-height: 1.4;
   }
 
-  @include breakpoint(tablet){
-      font-size: 40px;
-      text-align: center;
-     font-weight: var(--fw-light);
-      
+  @include breakpoint(tablet) {
+    font-size: 40px;
+    text-align: center;
+    font-weight: var(--fw-light);
+    p {
+      max-width: 800px;
+    }
+  }
+
+  @include breakpoint(laptop){
+    font-size: 48px;
   }
 }

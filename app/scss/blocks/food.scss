@@ -8,7 +8,7 @@
   }
 
   @include breakpoint(laptop) {
-    gap: 10rem;
+    gap: 12rem;
   }
 
   & .column-1 {
@@ -48,6 +48,7 @@
 
     @include breakpoint(laptop) {
       justify-self: flex-start;
+      margin-bottom: 3rem;
     }
   }
 

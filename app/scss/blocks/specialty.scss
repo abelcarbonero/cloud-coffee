@@ -26,12 +26,16 @@
       gap: 3rem;
     }
     @include breakpoint(laptop) {
-      gap: 12rem;
+      gap: 7rem;
     }
   }
 
   &__title {
-    max-width: 420px;
+    max-width: 400px;
+
+    @include breakpoint(laptop){
+      max-width: 500px;
+    }
   }
 
   &__container {

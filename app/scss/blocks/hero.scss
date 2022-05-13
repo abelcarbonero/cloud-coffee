@@ -8,9 +8,23 @@
     margin-top: 11rem;
     margin-bottom: 4rem;
   }
+  @include breakpoint(laptop){
+    margin-top: 14rem;
+    
+  }
 
   &__container {
     position: relative;
+    
+  }
+
+  & p{
+    @include breakpoint(laptop){
+      width: 50%;
+      margin-left: auto;
+      padding-left: 4rem;
+      padding-top: .75rem;
+    }
   }
 
   &__title {
@@ -30,10 +44,19 @@
       top: 9.5rem;
       font-size: 120px;
     }
+
+    @include breakpoint(laptop){
+      font-size: 140px;
+      top: .5rem;
+    }
   }
 
   &__img {
     aspect-ratio: 4/3;
     object-fit: cover;
+
+    @include breakpoint(laptop){
+      aspect-ratio: 16 / 9;
+    }
   }
 }
