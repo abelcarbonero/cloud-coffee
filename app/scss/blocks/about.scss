@@ -8,7 +8,7 @@
   &__description p {
     line-height: 1.8;
 
-    @include breakpoint(tablet){
+    @include breakpoint(tablet) {
       line-height: 2;
       font-weight: var(--fw-light);
       font-size: 22px;
@@ -24,7 +24,7 @@
     }
   }
 
-  &__description{
+  &__description {
     margin-top: 2rem;
   }
 
@@ -38,7 +38,6 @@
     margin-bottom: 1rem;
 
     @include breakpoint(tablet) {
-      
       margin-top: 6rem;
     }
   }
