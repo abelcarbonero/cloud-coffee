@@ -2,12 +2,13 @@
 .form {
   width: 100%;
   max-width: 500px;
-  padding-top: 3rem;
+  padding-top: 5rem;
 
   display: flex;
   flex-direction: column;
 
-  @include breakpoint(tablet) {
+  @include breakpoint(laptop) {
+    padding-top: 1.75rem;
   }
 
   &__group {
@@ -31,9 +32,14 @@
     background-color: #353535;
     border: none;
     color: white;
+
+    @include breakpoint(laptop){
+      height: 60px;
+    }
   }
 
   &__textarea {
+    color: white;
     margin-top: 1.25rem;
     height: 8rem;
     resize: none;
@@ -47,7 +53,7 @@
     }
 
     @include breakpoint(tablet) {
-      height: 10rem;
+      height: 12rem;
       margin-top: 1.5rem;
     }
   }
