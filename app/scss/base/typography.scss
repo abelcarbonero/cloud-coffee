@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 :root {
   /* font-sizes */
-  
+
   /* font-weight */
   --fw-xlight: 100;
   --fw-light: 300;
@@ -22,33 +22,25 @@
   }
 
   @include breakpoint(tablet) {
-   font-size: 2.5rem;
-   letter-spacing: 3px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
   }
   @include breakpoint(laptop) {
-   font-size: 3.75rem;
-   letter-spacing: 3px;
+    font-size: 3.75rem;
+    letter-spacing: 3px;
   }
 }
 
-
-.subtitle{
+.subtitle {
   font-size: 18px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
   font-weight: var(--fw-light);
   line-height: 1.5;
 
-  @include breakpoint(tablet){
+  @include breakpoint(tablet) {
     font-size: 32px;
-    margin-bottom: 7rem;
   }
-  @include breakpoint(laptop){
+  @include breakpoint(desktop) {
     font-size: 36px;
-   margin-bottom: 6rem;
   }
+ 
 }
-
-
-
-

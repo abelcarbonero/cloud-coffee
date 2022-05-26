@@ -25,9 +25,12 @@
     }
   }
 
+
+
   &__title {
     position: absolute;
     top: 6rem;
+    left: 4rem ;
     font-size: 50px;
     text-transform: uppercase;
     font-weight: var(--fw-xbold);
@@ -46,6 +49,30 @@
     @include breakpoint(laptop) {
       font-size: 140px;
       top: 0.5rem;
+    }
+    @include breakpoint(desktop) {
+      font-size: 170px;
+      top: 2rem;
+      left: -2rem;
+    }
+  }
+
+  .subtitle{
+    margin-bottom: 4.25rem;
+
+    @include breakpoint(tablet){
+      margin-bottom: 7.5rem;
+    }
+    @include breakpoint(laptop){
+      padding-top: 1rem;
+     margin-bottom: 7rem;
+
+    }
+    @include breakpoint(desktop){
+     
+      padding-top: 2.75rem;
+     margin-bottom: 6rem;
+
     }
   }
 

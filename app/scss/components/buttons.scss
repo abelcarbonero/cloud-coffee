@@ -29,10 +29,15 @@
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: opacity .5s;
+  transition: color .5s;
 
   &:hover{
-    opacity: .4;
+   color: var(--color-primary);
+   
+
+   &::after{
+    background-color: var(--color-primary);
+   }
   }
 
   &::after{
@@ -43,5 +48,7 @@
     right: 0;
     height: 3px;
     background-color: white;
+    transition: background-color .5s;
+    
   }
 }

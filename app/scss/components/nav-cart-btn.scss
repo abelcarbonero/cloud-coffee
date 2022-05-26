@@ -3,10 +3,6 @@
   position: relative;
   cursor: pointer;
 
-  @include breakpoint(laptop){
-    margin-bottom: 6px;
-  }
-
   & svg {
     position: relative;
     pointer-events: none;
@@ -19,7 +15,7 @@
 }
 
 .cart-btn-quantity {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
   border-radius: 40%;
   color: var(--color-100);
   padding: 0px 4px;

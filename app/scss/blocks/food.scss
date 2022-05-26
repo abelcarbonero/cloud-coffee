@@ -38,6 +38,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+  @include breakpoint(laptop) {
+    
+    gap: 3rem;
+  }
 
   &__title {
     margin-bottom: 1rem;
