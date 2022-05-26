@@ -25,12 +25,10 @@
     }
   }
 
-
-
   &__title {
     position: absolute;
     top: 6rem;
-    left: 4rem ;
+
     font-size: 50px;
     text-transform: uppercase;
     font-weight: var(--fw-xbold);
@@ -57,22 +55,19 @@
     }
   }
 
-  .subtitle{
+  .subtitle {
     margin-bottom: 4.25rem;
 
-    @include breakpoint(tablet){
+    @include breakpoint(tablet) {
       margin-bottom: 7.5rem;
     }
-    @include breakpoint(laptop){
+    @include breakpoint(laptop) {
       padding-top: 1rem;
-     margin-bottom: 7rem;
-
+      margin-bottom: 7rem;
     }
-    @include breakpoint(desktop){
-     
+    @include breakpoint(desktop) {
       padding-top: 2.75rem;
-     margin-bottom: 6rem;
-
+      margin-bottom: 6rem;
     }
   }
 

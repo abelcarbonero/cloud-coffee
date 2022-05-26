@@ -41,6 +41,7 @@
     @include breakpoint(laptop) {
       flex-direction: row;
       align-items: center;
+      gap: 2rem;
     }
   }
 
@@ -106,6 +107,11 @@
     svg{
       width: 2.5rem;
       height: 2.5rem;
+      transition: stroke .3s;
+
+      &:hover{
+        stroke: var(--color-primary);
+      }
     }
   }
 }
