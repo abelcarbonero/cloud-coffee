@@ -12,13 +12,11 @@
   }
 
   @include breakpoint(laptop) {
-   
     padding-inline: 5rem;
   }
 }
 
 .logo {
-  font-size: 2rem;
   font-family: var(--ff-secondary);
   font-weight: bold;
   color: var(--color-600);
