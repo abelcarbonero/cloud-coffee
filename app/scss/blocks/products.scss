@@ -6,9 +6,6 @@
   @include breakpoint(laptop) {
     margin-top: 5rem;
   }
-  
-
-  
 
   &__header {
     display: flex;
@@ -21,14 +18,13 @@
   }
 
   &__container {
-    margin-top: 6rem;
+    margin-top: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     column-gap: 6rem;
-    row-gap: 10rem;
+    row-gap: 5rem;
     position: relative;
 
     @include breakpoint(laptop) {
-      
       margin-top: 10rem;
     }
   }
@@ -49,7 +45,6 @@
 
 .product {
   &__img-container {
-    
     position: relative;
     overflow: hidden;
 
@@ -59,13 +54,12 @@
 
     &:hover .product__img {
       opacity: 0.5;
-     
     }
   }
 
   &__img {
     transition: opacity 0.4s;
-    
+
     aspect-ratio: 1 / 1;
     object-fit: cover;
     cursor: pointer;
@@ -92,15 +86,15 @@
 
     & span {
       pointer-events: none;
-      transition: color .3s;
+      transition: color 0.3s;
     }
 
     &:hover span {
       color: white;
     }
 
-    & svg{
-      transition: stroke .3s;
+    & svg {
+      transition: stroke 0.3s;
     }
 
     &:hover svg {
@@ -118,26 +112,22 @@
     @include breakpoint(laptop) {
       grid-template-rows: auto 250px auto;
     }
-
-
   }
 
   &__name {
     font-size: 20px;
-    
   }
 
   &__description {
-    
-    margin-top: .75rem;
-    
+    margin-top: 0.75rem;
   }
 
-  
-
-  &__price {
+  &__price-container {
+    margin-top: 0.5rem;
     color: var(--color-primary-dark);
     font-size: 20px;
-    margin-top: .5rem;
+    display: flex;
+
+    align-items: center;
   }
 }
