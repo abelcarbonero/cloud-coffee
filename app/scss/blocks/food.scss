@@ -8,7 +8,7 @@
   }
 
   @include breakpoint(laptop) {
-    gap: 12rem;
+    gap: 15rem;
   }
 
   & .column-1 {
@@ -37,6 +37,10 @@
   @include breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  @include breakpoint(laptop) {
+    
+    gap: 3rem;
   }
   @include breakpoint(laptop) {
     

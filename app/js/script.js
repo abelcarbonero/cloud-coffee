@@ -11,7 +11,7 @@ const showMenu = () => {
 };
 
 document.addEventListener("click", (e) => {
-  console.log(e.target);
+  
 
   if (e.target.matches(".menu-btn")) {
     showMenu();
@@ -22,6 +22,8 @@ document.addEventListener("click", (e) => {
     hamburgerBtn.classList.remove("active");
     body.classList.remove("no-scroll");
   }
+
+ 
 
   //* SHOW - CLOSE CART MENU
   if (e.target.matches(".cart__close-btn")) {
