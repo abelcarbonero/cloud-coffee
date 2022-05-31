@@ -190,7 +190,11 @@ const btnAction = (e) => {
   //Eliminar item de la cesta
   if (e.target.matches(".cart__item-remove-btn")) {
     delete cart[e.target.dataset.id];
+    if (Object.keys(cart).length === 0) {
+      cartQuantityIcon.textContent = "0";
+    }
     renderCart();
+    cartQuantityIcon.textContent = totalQuantity - item.quantity;
   }
 
   e.stopPropagation();
