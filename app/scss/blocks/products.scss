@@ -24,8 +24,12 @@
     row-gap: 5rem;
     position: relative;
 
-    @include breakpoint(laptop) {
-      margin-top: 10rem;
+    @include breakpoint(tablet){
+      margin-top: 8rem;
+    }
+    @include breakpoint(laptop){
+      margin-top: 12rem;
+      row-gap: 8rem;
     }
   }
 
@@ -107,19 +111,27 @@
     display: grid;
 
     @include breakpoint(tablet) {
-      grid-template-rows: auto 175px auto;
+      grid-template-rows: auto 140px auto;
     }
     @include breakpoint(laptop) {
-      grid-template-rows: auto 250px auto;
+      grid-template-rows: auto 170px auto;
     }
   }
 
   &__name {
     font-size: 20px;
+
+    @include breakpoint(tablet){
+      font-size: 24px;
+    }
   }
 
   &__description {
     margin-top: 0.75rem;
+    font-size: 1rem;
+    @include breakpoint(laptop){
+      font-size: 1.125rem;
+    }
   }
 
   &__price-container {
@@ -129,5 +141,9 @@
     display: flex;
 
     align-items: center;
+
+    @include breakpoint(tablet){
+      font-size: 22px;
+    }
   }
 }
