@@ -9,22 +9,30 @@
   gap: 1.5rem;
 
   &-img {
-    width: 80px;
+    width: 85px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
 
-  &-title {
-    line-height: 1.1;
+  &-info{
+    justify-content: center;
   }
 
-  &-price {
-    margin-top: var(--space-xs);
+  &-title {
+    line-height: 1.1;
+    font-size: 20px;
+  }
+
+  & h4 {
+    margin-top: .5rem;
+    font-size: 18px;
   }
 
   &-remove-btn {
-    color: var(--color-300);
     font-size: 14px;
+    margin-top: .5rem;
+    display: flex;
+    justify-self: start;
   }
 
   &-quantity-content {
@@ -32,6 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 18px;
   }
 
   &-plus-btn,
@@ -42,7 +51,7 @@
 
   &-plus-btn svg,
   &-minus-btn svg{
-      stroke: var(--color-accent);
+      stroke: var(--color-primary);
       stroke-width: 2px;
   }
 }
