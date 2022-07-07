@@ -7,7 +7,7 @@
     "instock": 30,
     "description":
       "Si eres un/a amante de los cafés suaves y cremosos, este es tu café. Delicado y envolvente en el paladar, con notas a cacao y matices afrutados.",
-    "imgSrc": "./dist/images/coffee-bag-1.webp"
+    "imgSrc": "../dist/images/coffee-bag-1.webp"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "instock": 43,
     "description":
       "Es un Café de Especialidad que destaca por su dulzura, con notas vibrantes a caramelo y cacao en boca.",
-    "imgSrc": "./dist/images/coffee-bag-2.webp"
+    "imgSrc": "../dist/images/coffee-bag-2.webp"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "instock": 10,
     "description":
       "Mezcla de varidades typica, bourbon, caturra y catuí. Reconocible por sus aromas de cacaos y por sus notas a almendra y caramelo.",
-    "imgSrc": "./dist/images/coffee-bag-3.webp"
+    "imgSrc": "../dist/images/coffee-bag-3.webp"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "instock": 15,
     "description":
       "Te cautivará por su autenticidad y naturalidad, con un cuerpo aterciopelado y una acidez cítrica viva y agradable.",
-    "imgSrc": "./dist/images/coffee-bag-4.webp"
+    "imgSrc": "../dist/images/coffee-bag-4.webp"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "instock": 4,
     "description":
       "Uno de los cafés de especialidad de África más valorados. Su completo sabor en boca, notable acidez cítrica y riqueza de matices te cautivará.",
-    "imgSrc": "./dist/images/coffee-bag-5.webp"
+    "imgSrc": "../dist/images/coffee-bag-5.webp"
   },
   {
     "id": 6,
@@ -57,6 +57,6 @@
     "instock": 20,
     "description":
       "Este café destaca por su excelente fragancia y afrutados matices, con notas a frutas del bosque, cereza y toques achocolatados.",
-    "imgSrc": "./dist/images/coffee-bag-6.webp"
+    "imgSrc": "../dist/images/coffee-bag-6.webp"
   }
 ]
